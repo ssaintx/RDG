@@ -1,0 +1,11 @@
+{
+    "Navbar": {
+        "About": "About the company",
+        "Products": "Products",
+        "Partners": "Partners",
+        "Contacts": "Contacts"
+    },
+    "Functions": {
+        "Language": "Русский"
+    }
+}
