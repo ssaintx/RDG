@@ -11,6 +11,34 @@
             "Using": "using",
             "Telegram": "Telegram bot"
         },
-        "Text": "Telegram bots for business automate tasks, improving customer interaction and increasing efficiency. They answer questions, collect data, manage orders, and integrate with CRM systems to provide 24/7 support and streamline workflows."
+        "Text": "Telegram bots for business automate tasks, improving customer interaction and increasing efficiency. They answer questions, collect data, manage orders, and integrate with CRM systems to provide 24/7 support and streamline workflows.",
+        "Buttons": {
+            "Order": "Order a bot",
+            "Learn": "Learn more"
+        }
+    },
+    "AboutProduct": {
+        "FirstCard": {
+            "Title": "50+ Professional Cases",
+            "Description": "Discover over 50 professional case studies showcasing successful projects in Telegram bot development. Get inspired and explore the full potential of our services.",
+            "Url": "View cases"
+        },
+        "SecondCard": {
+            "Title": "Expert Developers",
+            "Description": "Our top specialists are masters in AI and proficient in integrating various features. They provide continuous technical support, ensuring your project’s success from start to finish. Experience the best in the industry with our dedicated and highly skilled team.",
+            "Url": "View Team"
+        },
+        "ThirdCard": {
+            "Title": "Fast Project Development",
+            "Description": "Our specialists ensure rapid development within set timelines, delivering projects punctually and without compromise. With expertise in AI and feature integration, they provide continuous technical support for your project’s success."
+        },
+        "FourthCard": {
+            "Title": "Seamless API Integrations",
+            "Description": "Our specialists provide extensive API integrations, enabling the incorporation of third-party functionalities and resources to enhance your business."
+        },
+        "FifthCard": {
+            "Title": "Easy Bot Editing with PuzzleBot",
+            "Description": "Our bots are built using the PuzzleBot constructor, ensuring simplicity in editing and customization. For added flexibility, we also integrate with other constructors as needed to meet your business requirements."
+        }
     }
 }
