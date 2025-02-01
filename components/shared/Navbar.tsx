@@ -6,22 +6,28 @@ import { Menu } from "./Menu";
 import { navbarItems } from "@/constants";
 import { LanguageSwitcher } from "../functions/LanguageSwitcher";
 
+// NAVBAR COMPONENT
 export const Navbar = () => {
     return (
-        <nav className="navbar" aria-hidden="false">
+        <nav className="navbar">
+            {/* LOGO */}
             <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="ml-6 select-none" />
-            <ul className="hidden flex-row items-center justify-center gap-8 sm:flex">
+
+            {/* LINKS */}
+            <ul className="hidden flex-row items-center justify-center gap-12 md:flex">
                 {navbarItems().map((item) => (
                     <li key={item.href}>
-                        <Link href={item.href}>
+                        <Link href={item.href} className="text-[15px] hover">
                             {item.title}
                         </Link>
                     </li>
                 ))}
             </ul>
-            <div className="flex items-center justify-center gap-2">
+
+            {/* MOBILE RESPONSIVE MENU */}
+            <div className="flex items-center justify-center gap-4">
                 <LanguageSwitcher />
-                <div className="flex p-2 glassmorphism border border-neutral-800 rounded-md sm:hidden">
+                <div className="flex md:hidden">
                     <Menu />
                 </div>
             </div>

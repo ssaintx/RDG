@@ -1,22 +1,26 @@
 "use client"
 
 import { useTransition } from "react";
-import { useTranslations } from "next-intl";
 import { Locale } from "@/app/i18n/config";
 import { setUserLocale } from "@/app/i18n/locale";
 
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectTrigger,
+    SelectValue
+} from "../ui/select";
 import { GlobeIcon } from "@radix-ui/react-icons";
 
-import Image from "next/image";
-
+// INTERFACE FOR PROPERTIES OF THE COMPONENT
 interface LanguageSwitcherSelectProps {
     defaultValue: string;
     items: Array<{ value: string; label: string, icon: string }>;
 };
 
 export const LanguageSwitcherSelect = ({ defaultValue, items }: LanguageSwitcherSelectProps) => {
-    const t = useTranslations("Functions");
     const [isPending, startTransition] = useTransition();
 
     const onChange = async (value: string) => {
@@ -29,15 +33,15 @@ export const LanguageSwitcherSelect = ({ defaultValue, items }: LanguageSwitcher
 
     return (
         <Select defaultValue={defaultValue} onValueChange={onChange}>
-            <SelectTrigger className="h-8 w-auto gap-2 bg-transparent border-none focus:outline-none" disabled={isPending}>
+            <SelectTrigger className="select" disabled={isPending}>
                 <GlobeIcon />
-                <SelectValue placeholder={t("Language")} />
+                <SelectValue />
             </SelectTrigger>
-            <SelectContent className="border-none w-auto">
+            <SelectContent className="select-content">
                 <SelectGroup>
                     {items.map((item) => (
                         <SelectItem key={item.value} value={item.value}>
-                            <div className="">
+                            <div>
                                 <p>{item.label}</p>
                             </div>
                         </SelectItem>

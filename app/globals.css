@@ -11,22 +11,55 @@ body {
   * {
     @apply antialiased scroll-smooth;
   }
+
   body {
-    @apply bg-backgroundPrimary text-white font-[300];
+    @apply bg-backgroundPrimary text-textPrimary;
+  }
+}
+
+/* SECTION DESIGN*/
+@layer components {
+  /* HERO */
+  .hero {
+    @apply flex w-full h-screen
+      bg-[url('/images/hero-bg.png')]
+      bg-cover
+      bg-center
+      bg-no-repeat;
   }
 }
 
 /* COMPONENT DESIGN */
 @layer components {
   .navbar {
-    @apply fixed flex flex-row items-center justify-between px-4 py-2 w-full top-0 z-30 glassmorphism;
+    @apply fixed flex flex-row items-center justify-between container-padding w-full top-0 z-30 glassmorphism;
+  }
+
+  .menu {
+    @apply glassmorphism border-l-[1px] border-backgroundSecondary;
+  }
+
+  .select {
+    @apply h-8 w-auto gap-2 !bg-transparent !border-none focus:outline-none;
+  }
+
+  .select-content {
+    @apply glassmorphism !border-none w-auto;
   }
 }
 
 /* UTILITY DESIGN */
 @layer utilities {
   .glassmorphism {
-    @apply bg-backgroundPrimary/90 backdrop-filter backdrop-blur-3xl;
+    @apply !bg-backgroundPrimary/90 !backdrop-filter !backdrop-blur-xl;
+  }
+
+  .hover {
+    @apply hover:text-main duration-500 ease-in-out;
+  }
+
+  .container-padding {
+    @apply px-2 py-2 sm:px-4 md:px-8 xl:px-32;
   }
 }
 
@@ -59,6 +92,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;

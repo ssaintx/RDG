@@ -10,17 +10,17 @@ export const LanguageSwitcher = () => {
             items={[
                 {
                     value: 'uz',
-                    label: "O'zbekcha",
+                    label: "Uzb",
                     icon: '/icons/uz.svg',
                 },
                 {
                     value: 'ru',
-                    label: "Русский",
+                    label: "Rus",
                     icon: '/icons/ru.svg',
                 },
                 {
                     value: 'en',
-                    label: "English",
+                    label: "Eng",
                     icon: '/icons/en.svg',
                 }
             ]}

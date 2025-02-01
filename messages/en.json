@@ -5,7 +5,12 @@
         "Partners": "Partners",
         "Contacts": "Contacts"
     },
-    "Functions": {
-        "Language": "English"
+    "Hero": {
+        "Header": {
+            "Automation": "Automation",
+            "Using": "using",
+            "Telegram": "Telegram bot"
+        },
+        "Text": "Telegram bots for business automate tasks, improving customer interaction and increasing efficiency. They answer questions, collect data, manage orders, and integrate with CRM systems to provide 24/7 support and streamline workflows."
     }
 }
