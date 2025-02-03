@@ -9,19 +9,12 @@ export const LanguageSwitcher = () => {
             defaultValue={locale}
             items={[
                 {
-                    value: 'uz',
-                    label: "Uzb",
-                    icon: '/icons/uz.svg',
-                },
-                {
                     value: 'ru',
                     label: "Rus",
-                    icon: '/icons/ru.svg',
                 },
                 {
                     value: 'en',
                     label: "Eng",
-                    icon: '/icons/en.svg',
                 }
             ]}
         />

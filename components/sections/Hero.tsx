@@ -14,7 +14,7 @@ export const Hero = () => {
             {/* HERO CONTAINER  */}
             <div className="flex flex-col items-start justify-center container-padding w-full h-full">
                 {/* HERO HEADER */}
-                <h1 className="text-[2rem] sm:text-[3rem] xl:text-[4rem] font-bold md:mt-36 mt-24 sm:mb-4 mb-2 leading-tight">
+                <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold md:mt-36 mt-24 sm:mb-4 mb-2 leading-tight">
                     {t("Header.Automation")}&nbsp;
                     <span className="text-[#BBD6FE]">{t("Header.Using")}</span>&nbsp;<br />
                     <span className="text-[#52BEFF]">{t("Header.Telegram")}</span>

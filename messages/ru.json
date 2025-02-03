@@ -40,5 +40,46 @@
             "Title": "Easy Bot Editing with PuzzleBot",
             "Description": "Our bots are built using the PuzzleBot constructor, ensuring simplicity in editing and customization. For added flexibility, we also integrate with other constructors as needed to meet your business requirements."
         }
+    },
+    "InfoPanel": {
+        "FirstCard": {
+            "Title": "Artificial Intelligence",
+            "Description": "GPT-4 transforms the customer support process by automatically processing user requests. A bot equipped with this text neural network answers frequently asked questions, provides personalized recommendations, and helps with navigation through products and services. This reduces operator workload, speeds response times and improves service quality, leading to increased customer satisfaction and business efficiency.<br/><br/>Neural networks automate accounting processes by processing transactions, keeping records of financial transactions and creating reports. Integrating such AI solutions into your Telegram bot allows you to reduce time for routine tasks, reduce the likelihood of errors and ensure transparency of financial data. This frees up employees to perform strategic tasks, increasing overall productivity and accounting accuracy.<br/><br/>DALL-E 3 and Suno AI enhance the capabilities of your Telegram bot by generating unique content. DALL-E 3 produces high-quality images on demand, useful for marketing materials, illustrations and personalized visuals. Suno AI generates music tracks that can be used to create unique audiovisual experiences for users. This attracts attention and increases engagement by offering customers innovative and creative solutions.",
+            "Url": "Learn more about models"
+        },
+        "SecondCard": {
+            "Title": "GPT-4o",
+            "Description": "GPT-4 and GPT Vision provide: response automation, content creation, translation and localization, data analysis, interaction personalization, smart recommendations, quality natural language processing, image analysis, object and text recognition (OCR), generation of descriptions for visual content, enhancement user experience through intuitive interfaces."
+        },
+        "ThirdCard": {
+            "Title": "Midjourney",
+            "Description": "Midjourney provides: generating unique images from text descriptions, creating illustrations for marketing and advertising, visualizing ideas and concepts, developing product design and branding, creating art for games and animation, automating graphic content, improving user experience with personalized visual elements."
+        },
+        "FourthCard": {
+            "Title": "Suno AI",
+            "Description": "Suno AI provides: generation of unique music tracks, creation of background music for videos and podcasts, adaptation of music content to a brand, automation of music for games and applications, creation of jingles and audio screensavers, improvement of user experience through personalized musical elements."
+        }
+    },
+    "ConnectGPT": {
+        "Title": "Connect GPTs",
+        "Subtitle": "Connect GPTs to your bot in a couple of clicks.",
+        "Cards": {
+            "FirstCard": {
+                "Title": "AI Chat",
+                "Description": "A dialog tool that provides natural real-time communication with artificial intelligence, many models to choose from, all in one subscription.",
+                "ConnectButton": "Connect"    
+            },
+            "SecondCard": {
+                "Title": "AI Analytic",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Connect"    
+            },
+            "ThirdCard": {
+                "Title": "AI Video",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Connect"    
+            }
+        },
+        "Button": "View list of GPTs"
     }
 }

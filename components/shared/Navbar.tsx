@@ -11,7 +11,7 @@ export const Navbar = () => {
     return (
         <nav className="navbar">
             {/* LOGO */}
-            <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="ml-6 select-none" />
+            <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="select-none" />
 
             {/* LINKS */}
             <ul className="hidden flex-row items-center justify-center gap-12 md:flex">

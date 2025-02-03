@@ -16,6 +16,7 @@ export default {
 				textPrimary: '#FFFFFF',
 				textSecondary: '#BDC8D9',
 				textTertiary: '#83869B',
+				textLight: '#AEB3D3',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
