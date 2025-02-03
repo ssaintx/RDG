@@ -1,4 +1,9 @@
+import Image from 'next/image';
+
+import { Button } from '../ui/button';
 import { useTranslations } from 'next-intl';
+import { connectGPTItems } from '@/constants';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 export const ConnectGPT = () => {
   const t = useTranslations("ConnectGPT");
@@ -9,6 +14,33 @@ export const ConnectGPT = () => {
       <div className="flex flex-col justify-center gap-4 items-center w-full container-padding">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">{t("Title")}</h1>
         <h2 className="text-center text-md sm:text-lg text-textLight">{t("Subtitle")}</h2>
+      </div>
+      {/* CARDS CONTAINER */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 container-padding mt-12 w-full">
+        {connectGPTItems().map((item, i) => (
+          <div className={`card flex flex-row gap-4 justify-center ${i === 0 ? 'lg:rotate-left-card' : ''} ${i === 2 ? 'lg:rotate-right-card' : ''}`} key={item.id}>
+            {/* CARDS IMAGE */}
+            <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-xl" />
+            {/* CARDS TITLE */}
+            <h1 className="text-xl font-bold">{item.title}</h1>
+            {/* CARDS PARAGRAPH */}
+            <p className="text-textLight">{item.description}</p>
+            {/* CARDS BUTTON */}
+            <div className="flex items-center justify-end">
+              <Button className="btn-dark">
+                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                {item.button}
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* BUTTON CONTAINER*/}
+      <div className="flex items-center justify-center w-full container-padding my-12">
+        <Button className="btn-blue">
+          {t("Button")}
+          <ArrowRightIcon />
+        </Button>
       </div>
     </section>
   );

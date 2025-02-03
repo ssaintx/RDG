@@ -117,3 +117,37 @@ export const infoPanelItems = () => {
 
     return items;
 }
+
+// Connect GPTs
+export const connectGPTItems = () => {
+    const t = useTranslations("ConnectGPT.Cards");
+
+    const items = [
+        {
+            id: 1,
+            image: '/images/connect-gpt/first-card.png',
+            title: t('FirstCard.Title'),
+            description: t('FirstCard.Description'),
+            button: t('FirstCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 2,
+            image: '/images/connect-gpt/second-card.png',
+            title: t('SecondCard.Title'),
+            description: t('SecondCard.Description'),
+            button: t('SecondCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 3,
+            image: '/images/connect-gpt/third-card.png',
+            title: t('ThirdCard.Title'),
+            description: t('ThirdCard.Description'),
+            button: t('ThirdCard.ConnectButton'),
+            link: '',
+        },
+    ];
+
+    return items;
+}

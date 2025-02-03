@@ -78,6 +78,14 @@ body {
   .btn-transparent {
     @apply !bg-transparent !text-textTertiary inset-0;
   }
+
+  .btn-dark {
+    @apply !rounded-full !px-8 !bg-[#393939] !border-none;
+  }
+
+  .btn-blue {
+    @apply !rounded-full !px-8 !bg-main !border-none;  
+  }
 }
 
 /* UTILITY DESIGN */
@@ -104,6 +112,14 @@ body {
 
   .card {
     @apply flex flex-col h-full p-6 bg-backgroundSecondary rounded-3xl;
+  }
+
+  .rotate-left-card {
+    transform: scale(0.85) perspective(400px) rotate3d(0, 1, 0, 15deg);
+  }
+
+  .rotate-right-card {
+    transform: scale(0.85) perspective(400px) rotate3d(0, 1, 0, -15deg);
   }
 }
 
