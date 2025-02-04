@@ -67,19 +67,98 @@
             "FirstCard": {
                 "Title": "AI Chat",
                 "Description": "A dialog tool that provides natural real-time communication with artificial intelligence, many models to choose from, all in one subscription.",
-                "ConnectButton": "Connect"    
+                "ConnectButton": "Connect"
             },
             "SecondCard": {
                 "Title": "AI Analytic",
                 "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Connect"    
+                "ConnectButton": "Connect"
             },
             "ThirdCard": {
                 "Title": "AI Video",
                 "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Connect"    
+                "ConnectButton": "Connect"
             }
         },
         "Button": "View list of GPTs"
+    },
+    "Commissions": {
+        "Title": "Affiliate reward of 15% for referred client",
+        "Subtitle": "Invite future customers through the loyalty program and receive 15% of the amount of a successful order.",
+        "InviteClient": "Invite a client",
+        "LearnMore": "Learn more"
+    },
+    "Features": {
+        "Title": "Features",
+        "Cards": {
+            "FirstCard": {
+                "Title": "Security",
+                "Description": "Control the bot and all internal processes without worrying about security.ot and all internal processes."
+            },
+            "SecondCard": {
+                "Title": "Payments",
+                "Description": "Accept payments in Telegram Stars local currency, cryptocurrency or to a card."
+            },
+            "ThirdCard": {
+                "Title": "Notifications",
+                "Description": "Receive notifications about your users' activities."
+            },
+            "FourthCard": {
+                "Title": "AI Analytics",
+                "Description": "Our bots leverage advanced AI to regularly analyze traffic, purchases, and sales, providing valuable insights for your business. This continuous analysis helps you understand customer behavior, optimize marketing strategies, and boost sales. With our AI-powered bots, you can make data-driven decisions to enhance your business performance."
+            },
+            "FifthCard": {
+                "Title": "Effortless Management",
+                "Description": "Easily handle interactions, update functionalities, and customize your bot to meet your business needs. Enjoy a straightforward and efficient bot management experience supported by our experts. Effortlessly track user activity, automate routine tasks, and integrate third-party services to enhance your bot’s capabilities. Our intuitive interface ensures you can make adjustments on the fly, keeping your bot up-to-date and aligned with your business goals. Rely on our team for ongoing support and optimization, ensuring your bot delivers maximum value."
+            }
+        }
+    },
+    "Team": {
+        "Title": "Our team",
+        "Subtitle": "Meet our team of developers, managers and operators.",
+        "Cards": {
+            "FirstCard": {
+                "Name": "Aziz",
+                "Role": "CEO, Developer, Designer",
+                "About": "Co-founder of RDG and Puzzle AI, the designer of this site is an experienced specialist in the field of Telegram bots and AI.",
+                "Portfolio": "Portfolio"
+            },
+            "SecondCard": {
+                "Name": "George",
+                "Role": "CEO, Developer, Layout Designer",
+                "About": "Co-founder of RDG and Puzzle AI, layout designer, front-end and back-end developer.",
+                "Portfolio": "Portfolio"
+            },
+            "ThirdCard": {
+                "Name": "Max",
+                "Role": "CEO, Developer, SMM",
+                "About": "Text",
+                "Portfolio": "Portfolio"
+            },
+            "FourthCard": {
+                "Name": "Alexander",
+                "Role": "CEO, Developer, AI Specialist",
+                "About": "AI Bots professional developer. Founder of Puzzle AI bot & Plugin (1600 AI bots connected)",
+                "Portfolio": "Portfolio"
+            },
+            "FifthCard": {
+                "Name": "Michael",
+                "Role": "Sales Manager",
+                "About": "Text",
+                "Portfolio": "Portfolio"
+            },
+            "SixthCard": {
+                "Name": "Aqua",
+                "Role": "Technical Support",
+                "About": "Text",
+                "Portfolio": "Portfolio"
+            },
+            "SeventhCard": {
+                "Name": "Vsevolod",
+                "Role": "Developer",
+                "About": "Middle Python developer. Development of bots and web applications for Telegram.",
+                "Portfolio": "Portfolio"
+            }
+        }
     }
 }

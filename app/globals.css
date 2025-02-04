@@ -27,6 +27,7 @@ body {
 
 /* SECTION DESIGN*/
 @layer components {
+
   /* HERO DESIGN */
   .hero {
     @apply flex w-full h-full sm:h-screen bg-cover bg-center bg-no-repeat;
@@ -48,8 +49,24 @@ body {
     @apply flex flex-col w-full h-full;
   }
 
+  /* CONNECT GPT */
   .connect-gpt {
     @apply flex flex-col w-full h-full;
+  }
+
+  /* AFFILATE REWARD */
+  .commissions {
+    @apply flex flex-col w-full h-full bg-white;
+  }
+
+  /* FEATURES */
+  .features {
+    @apply flex flex-col w-full h-full bg-white;
+  }
+
+  /* TEAM */
+  .team {
+    @apply flex flex-col w-full h-full bg-white;
   }
 }
 
@@ -84,7 +101,7 @@ body {
   }
 
   .btn-blue {
-    @apply !rounded-full !px-8 !bg-main !border-none;  
+    @apply !rounded-full !px-8 !bg-main !border-none;
   }
 }
 
@@ -112,6 +129,10 @@ body {
 
   .card {
     @apply flex flex-col h-full p-6 bg-backgroundSecondary rounded-3xl;
+  }
+
+  .title-text {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
   }
 
   .rotate-left-card {

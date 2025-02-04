@@ -12,13 +12,13 @@ export const ConnectGPT = () => {
     <section className="connect-gpt">
       {/* TITLE AND SUBTITLE CONTAINER */}
       <div className="flex flex-col justify-center gap-4 items-center w-full container-padding">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">{t("Title")}</h1>
+        <h1 className="title-text">{t("Title")}</h1>
         <h2 className="text-center text-md sm:text-lg text-textLight">{t("Subtitle")}</h2>
       </div>
       {/* CARDS CONTAINER */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 container-padding mt-12 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-6 container-padding mt-12 w-full">
         {connectGPTItems().map((item, i) => (
-          <div className={`card flex flex-row gap-4 justify-center ${i === 0 ? 'lg:rotate-left-card' : ''} ${i === 2 ? 'lg:rotate-right-card' : ''}`} key={item.id}>
+          <div className={`card flex flex-row gap-4 justify-center ${i === 0 ? 'md:rotate-left-card' : ''} ${i === 2 ? 'md:rotate-right-card' : ''}`} key={item.id}>
             {/* CARDS IMAGE */}
             <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-xl" />
             {/* CARDS TITLE */}
