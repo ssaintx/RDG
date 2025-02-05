@@ -68,12 +68,26 @@ body {
   .team {
     @apply flex flex-col w-full h-full bg-white;
   }
+
+  /* CASES */
+  .cases {
+    @apply flex flex-col w-full h-full;
+  }
+
+  /* GET STARTED */
+  .get-started {
+    @apply hidden flex-col w-full h-full sm:flex;
+  }
 }
 
 /* COMPONENT DESIGN */
 @layer components {
   .navbar {
     @apply fixed flex flex-row items-center justify-between container-padding py-2 w-full top-0 z-30 glassmorphism border-b-[1px] border-b-backgroundSecondary;
+  }
+
+  .footer {
+    @apply flex flex-row items-center justify-between container-padding py-2 border-t-[1px] border-t-[#3E3E3E];
   }
 
   .menu {
@@ -133,6 +147,10 @@ body {
 
   .title-text {
     @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
+  }
+
+  .subtitle-text {
+    @apply text-center sm:text-lg;
   }
 
   .rotate-left-card {

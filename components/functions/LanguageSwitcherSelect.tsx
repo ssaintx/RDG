@@ -17,7 +17,7 @@ import { GlobeIcon } from "@radix-ui/react-icons";
 // INTERFACE FOR PROPERTIES OF THE COMPONENT
 interface LanguageSwitcherSelectProps {
     defaultValue: string;
-    items: Array<{ value: string; label: string, icon: string }>;
+    items: Array<{ value: string; label: string }>;
 };
 
 export const LanguageSwitcherSelect = ({ defaultValue, items }: LanguageSwitcherSelectProps) => {

@@ -160,5 +160,53 @@
                 "Portfolio": "Portfolio"
             }
         }
+    },
+    "Cases": {
+        "Title": "Cases",
+        "Subtitle": "You can study the successful projects of our team",
+        "Cards": {
+            "FirstCard": {
+                "Title": "Pixel Store",
+                "Description": "Large store and catalog of AI bots, from professional developers.",
+                "Url": "Open bot"
+            },
+            "SecondCard": {
+                "Title": "Assistant Oleonka",
+                "Description": "The best and safest telegram assistant with great functionality.",
+                "Url": "Open bot"
+            },
+            "ThirdCard": {
+                "Title": "Puzzle AI Bot",
+                "Description": "OpenAI GPT-4, DALLE-3, Midjourney, Suno and other best AI models",
+                "Url": "Open bot"
+            },
+            "FourthCard": {
+                "Title": "Games island",
+                "Description": "One of the first gaming bots in telegram in web-app mode.",
+                "Url": "Open bot"
+            },
+            "FifthCard": {
+                "Title": "PuzzleBot Controller",
+                "Description": "A tool for managing your PuzzleBot bots without leaving Telegram.",
+                "Url": "Open bot"
+            },
+            "SixthCard": {
+                "Title": "Black Snow",
+                "Description": "The first game with a plot taking place in a nuclear winter.",
+                "Url": "Open bot"
+            }
+        },
+        "MoreCases": "More cases on Pixel Store",
+        "OrderBot": "Order a bot"
+    },
+    "GetStarted": {
+        "Title": "Ready to get started?",
+        "Subtitle": "We want to make the world a better place using process automation.",
+        "OrderBot": "Order a bot",
+        "About": "About the team"
+    },
+    "Footer": {
+        "DataPolicy": "Data processing policy",
+        "PrivacyPolicy": "Privacy policy"
     }
 }

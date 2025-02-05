@@ -13,7 +13,7 @@ export const ConnectGPT = () => {
       {/* TITLE AND SUBTITLE CONTAINER */}
       <div className="flex flex-col justify-center gap-4 items-center w-full container-padding">
         <h1 className="title-text">{t("Title")}</h1>
-        <h2 className="text-center text-md sm:text-lg text-textLight">{t("Subtitle")}</h2>
+        <h2 className="subtitle-text text-textLight">{t("Subtitle")}</h2>
       </div>
       {/* CARDS CONTAINER */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-6 container-padding mt-12 w-full">

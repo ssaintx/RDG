@@ -15,8 +15,8 @@ export const Commissions = () => {
                     <h2 className="text-textTertiary text-sm sm:text-md">{t("Subtitle")}</h2>
                 </div>
                 {/* BUTTON CONTAINER */}
-                <div className="flex flex-row gap-16">
-                    <Button className="btn-blue">
+                <div className="flex flex-col md:flex-row max-w-[300px] gap-16">
+                        <Button className="btn-blue">
                         {t("InviteClient")}
                         <ArrowRightIcon />
                     </Button>

@@ -203,7 +203,8 @@ export const teamItems = () => {
             name: t('FirstCard.Name'),
             role: t('FirstCard.Role'),
             about: t('FirstCard.About'),
-            portfolio: t('FirstCard.Portfolio')
+            portfolio: t('FirstCard.Portfolio'),
+            url: '',
         },
         {
             id: 2,
@@ -211,7 +212,8 @@ export const teamItems = () => {
             name: t('SecondCard.Name'),
             role: t('SecondCard.Role'),
             about: t('SecondCard.About'),
-            portfolio: t('FirstCard.Portfolio')
+            portfolio: t('FirstCard.Portfolio'),
+            url: '',
         },
         {
             id: 3,
@@ -219,7 +221,8 @@ export const teamItems = () => {
             name: t('ThirdCard.Name'),
             role: t('ThirdCard.Role'),
             about: t('ThirdCard.About'),
-            portfolio: t('ThirdCard.Portfolio')
+            portfolio: t('ThirdCard.Portfolio'),
+            url: '',
         },
         {
             id: 4,
@@ -227,7 +230,8 @@ export const teamItems = () => {
             name: t('FourthCard.Name'),
             role: t('FourthCard.Role'),
             about: t('FourthCard.About'),
-            portfolio: t('FourthCard.Portfolio')
+            portfolio: t('FourthCard.Portfolio'),
+            url: '',
         },
         {
             id: 5,
@@ -235,7 +239,8 @@ export const teamItems = () => {
             name: t('FifthCard.Name'),
             role: t('FifthCard.Role'),
             about: t('FifthCard.About'),
-            portfolio: t('FifthCard.Portfolio')
+            portfolio: t('FifthCard.Portfolio'),
+            url: '',
         },
         {
             id: 6,
@@ -243,7 +248,8 @@ export const teamItems = () => {
             name: t('SixthCard.Name'),
             role: t('SixthCard.Role'),
             about: t('SixthCard.About'),
-            portfolio: t('SixthCard.Portfolio')
+            portfolio: t('SixthCard.Portfolio'),
+            url: '',
         },
         {
             id: 7,
@@ -251,7 +257,66 @@ export const teamItems = () => {
             name: t('SeventhCard.Name'),
             role: t('SeventhCard.Role'),
             about: t('SeventhCard.About'),
-            portfolio: t('SeventhCard.Portfolio')
+            portfolio: t('SeventhCard.Portfolio'),
+            url: '',
+        },
+    ];
+
+    return items;
+};
+
+// Cases
+export const casesItems = () => {
+    const t = useTranslations("Cases.Cards");
+
+    const items = [
+        {
+            id: 1,
+            image: '/images/cases/first-card.jpg',
+            title: t('FirstCard.Title'),
+            description: t('FirstCard.Description'),
+            url: t('FirstCard.Url'),
+            link: '',
+        },
+        {
+            id: 2,
+            image: '/images/cases/second-card.jpg',
+            title: t('SecondCard.Title'),
+            description: t('SecondCard.Description'),
+            url: t('SecondCard.Url'),
+            link: '',
+        },
+        {
+            id: 3,
+            image: '/images/cases/third-card.jpg',
+            title: t('ThirdCard.Title'),
+            description: t('ThirdCard.Description'),
+            url: t('ThirdCard.Url'),
+            link: '',
+        },
+        {
+            id: 4,
+            image: '/images/cases/fourth-card.jpg',
+            title: t('FourthCard.Title'),
+            description: t('FourthCard.Description'),
+            url: t('FourthCard.Url'),
+            link: '',
+        },
+        {
+            id: 5,
+            image: '/images/cases/fifth-card.jpg',
+            title: t('FifthCard.Title'),
+            description: t('FifthCard.Description'),
+            url: t('FifthCard.Url'),
+            link: '',
+        },
+        {
+            id: 6,
+            image: '/images/cases/sixth-card.jpg',
+            title: t('SixthCard.Title'),
+            description: t('SixthCard.Description'),
+            url: t('SixthCard.Url'),
+            link: '',
         },
     ];
 
