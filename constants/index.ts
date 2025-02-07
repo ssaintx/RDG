@@ -1,30 +1,90 @@
 import { useTranslations } from "next-intl";
 
-// Navbar
-export const navbarItems = () => {
-    const t = useTranslations("Navbar");
+// Navbar items
+export const aboutItems = () => {
+    const t = useTranslations("Navbar.About");
 
     const items = [
         {
-            title: t("About"),
-            href: "/about",
+            title: t("AboutUs"),
+            href: "/about-us",
         },
         {
-            title: t("Products"),
-            href: "/products",
+            title: t("OurTeam"),
+            href: "/our-team",
         },
         {
-            title: t("Partners"),
-            href: "/partners"
+            title: t("DevelopmentLessons"),
+            href: "",
         },
         {
-            title: t("Contacts"),
-            href: "/contacts",
+            title: t("DataPolicy"),
+            href: "",
         },
-    ];
+        {
+            title: t("PrivacyPolicy"),
+            href: "",
+        },
+    ]
 
     return items;
-};
+}
+
+export const productsItems = () => {
+    const t = useTranslations("Navbar.Products");
+
+    const items = [
+        {
+            title: t("TelegramBot"),
+            href: "",
+        },
+        {
+            title: t("Website"),
+            href: "",
+        },
+        {
+            title: t("AI"),
+            href: "",
+        },
+        {
+            title: t("UsingAI"),
+            href: "",
+        },
+        {
+            title: t("BotDevelopment"),
+            href: "",
+        },
+        {
+            title: t("ConnectionPlugin"),
+            href: "",
+        },
+        {
+            title: t("GPTs"),
+            href: "",
+        },
+        {
+            title: t("DevelopmentAI"),
+            href: "",
+        },
+    ]
+
+    return items;
+}
+
+export const partnersItems = () => {
+    const t = useTranslations("Navbar.Partners");
+
+    const items = [
+        {
+            id: 1,
+            image: '/images/partners/first-card.png',
+            title: t("FirstPartner.Title"),
+            description: t("FirstPartner.Description"),
+        },
+    ]
+
+    return items;
+}
 
 // About Product
 export const aboutProductItems = () => {

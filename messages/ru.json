@@ -1,9 +1,40 @@
 {
     "Navbar": {
-        "About": "About the company",
-        "Products": "Products",
-        "Partners": "Partners",
-        "Contacts": "Contacts"
+        "About": {
+            "Title": "About the company",
+            "AboutUs": "About us",
+            "OurTeam": "Our Team",
+            "DevelopmentLessons": "Development lessons",
+            "DataPolicy": "Data processing policy",
+            "PrivacyPolicy": "Privacy policy"
+        },
+        "Products": {
+            "Title": "Products",
+            "TelegramBot": "Telegram bot development",
+            "Website": "Website development",
+            "AI": "Connecting AI",
+            "UsingAI": "Using AI",
+            "BotDevelopment": "Bot development training",
+            "ConnectionPlugin": "AI connection plugin",
+            "GPTs": "GPTs",
+            "DevelopmentAI": "Development of AI assistants"
+        },
+        "Partners": {
+            "Title": "Partners",
+            "FirstPartner": {
+                "Title": "Pixel Bot",
+                "Description": "AI tool development service."
+            }
+        },
+        "Contacts": {
+            "Title": "Contacts",
+            "Order": "Order bot",
+            "Support": "Support",
+            "NewsChannel": {
+                "Title": "News Channel",
+                "Description": "Our news channel in telegram."
+            }
+        }
     },
     "Hero": {
         "Header": {

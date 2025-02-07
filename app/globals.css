@@ -134,7 +134,7 @@ body {
   }
 
   .container-padding-2 {
-    @apply py-4 sm:py-6 md:py-10 lg:py-24;
+    @apply py-6 md:py-10 lg:py-24;
   }
 
   .card-container {
@@ -159,6 +159,10 @@ body {
 
   .rotate-right-card {
     transform: scale(0.85) perspective(400px) rotate3d(0, 1, 0, -15deg);
+  }
+
+  .nav-menu {
+    @apply !bg-backgroundPrimary/90 !backdrop-filter !backdrop-blur-xl text-white;
   }
 }
 

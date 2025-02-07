@@ -6,7 +6,7 @@ export const Commissions = () => {
     const t = useTranslations("Commissions");
 
     return (
-        <section className="commissions">
+        <section className="commissions pt-8">
             {/* CONTAINER */}
             <div className="flex flex-col gap-6 w-full container-padding container-padding-2">
                 {/* TEXT CONTAINER */}
@@ -15,12 +15,12 @@ export const Commissions = () => {
                     <h2 className="text-textTertiary text-sm sm:text-md">{t("Subtitle")}</h2>
                 </div>
                 {/* BUTTON CONTAINER */}
-                <div className="flex flex-col md:flex-row max-w-[300px] gap-16">
-                        <Button className="btn-blue">
+                <div className="flex flex-row gap-4 sm:gap-8">
+                        <Button className="btn-blue !px-4 sm:!px-8">
                         {t("InviteClient")}
                         <ArrowRightIcon />
                     </Button>
-                    <Button className="btn-transparent">
+                    <Button className="btn-transparent !px-4 sm:!px-8">
                         {t("LearnMore")}
                         <ArrowRightIcon className="-rotate-45 size-6" />
                     </Button>

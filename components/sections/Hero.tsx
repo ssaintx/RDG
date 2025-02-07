@@ -26,13 +26,13 @@ export const Hero = () => {
                 </p>
 
                 {/* HERO CONTAINER */}
-                <div className="flex flex-col md:flex-row h-full items-center gap-36 sm:gap-16">
+                <div className="flex flex-col sm:flex-row h-full items-center gap-36 sm:gap-16 pb-6">
                     {/* HERO BUTTONS */}
                     <Button className="btn-blur">
                         {t("Buttons.Order")}
                         <ArrowRightIcon />
                     </Button>
-                    <Button className="btn-transparent justify-self-end">
+                    <Button className="btn-transparent justify-self-end -translate-x-8 sm:-translate-x-0">
                         {t("Buttons.Learn")}
                         <ArrowDownIcon />
                     </Button>

@@ -28,7 +28,7 @@ export const Team = () => {
                             {/* Text Content */}
                             <div className="absolute bottom-0 left-0 right-0 p-6 z-10 transition-all duration-300 flex flex-col">
                                 {/* Static Text (Always Visible) */}
-                                <div className="absolute bottom-0 transition-all duration-300 -translate-y-6 group-hover:-translate-y-32">
+                                <div className="absolute bottom-0 transition-all duration-300 -translate-y-6 group-hover:-translate-y-48">
                                     <h1 className="text-white font-bold text-lg">{item.name}</h1>
                                     <h2 className="text-[#D9D9D9] text-sm">{item.role}</h2>
                                 </div>
