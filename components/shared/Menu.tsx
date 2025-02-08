@@ -1,43 +1,122 @@
-import Link from "next/link";
+"use client"
 
 import {
-    Sheet,
-    SheetContent,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet";
-import { TextAlignJustifyIcon } from "@radix-ui/react-icons";
+    motion,
+    AnimatePresence
+} from "framer-motion";
 
-import { Year } from "./Year";
-import { navbarItems } from "@/constants";
+import {
+    Cross2Icon,
+    HamburgerMenuIcon,
+} from "@radix-ui/react-icons";
+
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger
+} from "@/components/ui/accordion";
+
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export const Menu = () => {
+    const t = useTranslations("Navbar")
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <Sheet>
-            <SheetTrigger asChild>
-                <TextAlignJustifyIcon className="size-6" />
-            </SheetTrigger>
-            <SheetContent side="right" className="menu">
-                <SheetHeader>
-                    <SheetTitle></SheetTitle>
-                </SheetHeader>
+        <div className="relative">
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close menu" : "Open menu"}
+                className="p-2 focus:outline-none z-50"
+            >
+                <HamburgerMenuIcon className="size-4" />
+            </button>
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ height: "10vh" }}
+                        animate={{ height: "100vh" }}
+                        exit={{ height: "10vh" }}
+                        transition={{
+                            duration: 0.5,
+                            ease: [0, 0.71, 0.2, 1.01],
+                        }}
+                        className="fixed top-0 left-0 w-full h-full bg-[#282828] backdrop-blur-3xl text-white z-40 flex flex-col p-6 overflow-y-auto">
 
-                <ul className="flex flex-col items-center justify-center gap-2 h-full pb-12">
-                    {navbarItems().map((item) => (
-                        <li key={item.href}>
-                            <Link href={item.href} className="text-neutral-400 hover">
-                                {item.title}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            aria-label="Close menu"
+                            className="self-end text-xl focus:outline-none mb-4">
+                            <Cross2Icon />
+                        </button>
 
-                <SheetFooter>
-                    <span className="text-sm text-center text-neutral-400"><Year /> RDG Company.</span>
-                </SheetFooter>
-            </SheetContent>
-        </Sheet >
+                        <Accordion type="single" collapsible className="w-full">
+                            <AccordionItem value="about">
+                                <AccordionTrigger className="text-[#E3E3E3]">{t("About.Title")}</AccordionTrigger>
+                                <AccordionContent>
+                                    <ul className="space-y-2 text-white text-sm font-thin">
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.AboutUs")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.OurTeam")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DevelopmentLessons")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DataPolicy")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.PrivacyPolicy")}</a></li>
+                                    </ul>
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="products">
+                                <AccordionTrigger className="text-[#E3E3E3]">{t("Products.Title")}</AccordionTrigger>
+                                <AccordionContent>
+                                    <ul className="space-y-2 text-white text-sm font-thin">
+                                        <li className="text-textTertiary my-1 font-light">{t("Products.Title")}</li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.TelegramBot")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.Website")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.AI")}</a></li>
+                                        <li className="text-textTertiary my-1 font-light">{t("Products.Solutions")}</li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.UsingAI")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.BotDevelopment")}</a></li>
+                                        <li className="text-textTertiary my-1 font-light">{t("Products.AI2")}</li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.ConnectionPlugin")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.GPTs")}</a></li>
+                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.DevelopmentAI")}</a></li>
+                                    </ul>
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="partners">
+                                <AccordionTrigger className="text-[#E3E3E3]">{t("Partners.Title")}</AccordionTrigger>
+                                <AccordionContent>
+                                    <ul className="space-y-2 text-white text-sm">
+                                        <a href='' target="_blank" rel="noopener noreferrer" className="card gap-2 !p-2 !w-max !rounded-xl">
+                                            <Image src='/images/partners/first-card.png' alt='partners' width={200} height={200} className="rounded-lg" />
+                                            <h1 className="text-white">{t("Partners.FirstPartner.Title")}</h1>
+                                            <p className="text-sm text-textTertiary">{t("Partners.FirstPartner.Description")}</p>
+                                        </a>
+                                    </ul>
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="contacts">
+                                <AccordionTrigger className="text-[#E3E3E3]">{t("Contacts.Title")}</AccordionTrigger>
+                                <AccordionContent>
+                                    <ul className="flex flex-col space-y-2 text-white text-sm">
+                                        <div className="flex flex-col gap-2 mt-4 font-thin">
+                                            <a href='' target="_blank" rel="noopener noreferrer">{t("Contacts.Order")}</a>
+                                            <a href='' target="_blank" rel="noopener noreferrer">{t("Contacts.Support")}</a>
+                                        </div>
+                                        <a href='' target="_blank" rel="noopener noreferrer" className="card gap-2 !p-2 !w-max !rounded-xl">
+                                            <Image src='/images/contacts/first-card.png' alt="news" width={200} height={100} className="rounded-lg" />
+                                            <h1 className="text-white">{t("Contacts.NewsChannel.Title")}</h1>
+                                            <p className="text-sm text-textTertiary">{t("Contacts.NewsChannel.Description")}</p>
+                                        </a>
+                                    </ul>
+                                </AccordionContent>
+                            </AccordionItem>
+
+                        </Accordion>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </div>
     );
 };

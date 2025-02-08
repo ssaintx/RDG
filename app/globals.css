@@ -103,19 +103,19 @@ body {
   }
 
   .btn-blur {
-    @apply !bg-backgroundPrimary/5 !backdrop-filter !backdrop-blur-xl border !border-[#AEB3D3] !rounded-full !px-8;
+    @apply !bg-backgroundPrimary/5 !backdrop-filter !backdrop-blur-xl border !border-[#AEB3D3] !rounded-full !px-8 !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 
   .btn-transparent {
-    @apply !bg-transparent !text-textTertiary inset-0;
+    @apply !bg-transparent !text-textTertiary inset-0 !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 
   .btn-dark {
-    @apply !rounded-full !px-8 !bg-[#393939] !border-none;
+    @apply !rounded-full !px-8 !bg-[#393939] !border-none !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 
   .btn-blue {
-    @apply !rounded-full !px-8 !bg-main !border-none;
+    @apply !rounded-full !px-8 !bg-main !border-none !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 }
 

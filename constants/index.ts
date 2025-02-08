@@ -80,6 +80,7 @@ export const partnersItems = () => {
             image: '/images/partners/first-card.png',
             title: t("FirstPartner.Title"),
             description: t("FirstPartner.Description"),
+            href: '',
         },
     ]
 

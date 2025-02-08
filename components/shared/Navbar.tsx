@@ -1,5 +1,3 @@
-
-import Link from "next/link";
 import Image from "next/image";
 
 import { Menu } from "./Menu";
@@ -13,7 +11,7 @@ export const Navbar = () => {
             {/* LOGO */}
             <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="select-none" />
 
-            {/* LINKS */}
+            {/* DESKTOP VIEW */}
             <div className="hidden items-center justify-center md:flex">
                 <NavMenu />
             </div>
@@ -21,7 +19,7 @@ export const Navbar = () => {
             <div className="flex items-center justify-center gap-4">
                 <LanguageSwitcher />
                 <div className="flex md:hidden">
-                    {/* <Menu /> */}
+                    <Menu />
                 </div>
             </div>
         </nav>

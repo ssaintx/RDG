@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import {
@@ -12,15 +13,13 @@ import {
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-import { useTranslations } from "next-intl";
 import {
     aboutItems,
     partnersItems,
     productsItems
 } from "@/constants";
-import Image from "next/image";
 
-
+import { useTranslations } from "next-intl";
 
 export const NavMenu = () => {
     const t = useTranslations("Navbar");
@@ -64,11 +63,11 @@ export const NavMenu = () => {
                     <NavigationMenuContent className="nav-menu">
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                             {partnersItems().map((item) => (
-                                <div className="card gap-2 " key={item.id}>
+                                <a href={item.href} target="_blank" rel="noopener noreferrer" className="card gap-2 " key={item.id}>
                                     <Image src={item.image} alt={item.title} width={300} height={200} className="rounded-lg" />
                                     <h1 className="text-lg">{item.title}</h1>
                                     <p className="text-sm text-textLight">{item.description}</p>
-                                </div>
+                                </a>
                             ))}
                         </ul>
                     </NavigationMenuContent>
@@ -79,14 +78,14 @@ export const NavMenu = () => {
                     <NavigationMenuContent className="nav-menu">
                         <ul className="flex items-start justify-between w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                             <div className="flex flex-col gap-2 mt-4">
-                                <p>{t("Contacts.Order")}</p>
-                                <p>{t("Contacts.Support")}</p>
+                                <ListItem href='' target="_blank" rel="noopener noreferrer" title={t("Contacts.Order")} />
+                                <ListItem href='' target="_blank" rel="noopener noreferrer" title={t("Contacts.Support")} />
                             </div>
-                            <div className="card gap-2 ">
+                            <a href='' target="_blank" rel="noopener noreferrer" className="card gap-2 ">
                                 <Image src='/images/contacts/first-card.png' alt="news" width={200} height={200} className="rounded-lg" />
                                 <h1 className="text-lg">{t("Contacts.NewsChannel.Title")}</h1>
                                 <p className="text-sm text-textLight">{t("Contacts.NewsChannel.Description")}</p>
-                            </div>
+                            </a>
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -105,7 +104,7 @@ const ListItem = React.forwardRef<
                 <a
                     ref={ref}
                     className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors duration-200 ease-in-out hover:text-main",
+                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none hover hover:-translate-y-1 hover:bg-backgroundSecondary",
                         className
                     )}
                     {...props}
