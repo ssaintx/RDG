@@ -241,5 +241,39 @@
     "Footer": {
         "DataPolicy": "Data processing policy",
         "PrivacyPolicy": "Privacy policy"
+    },
+    "AboutUs": {
+        "Title": "Build",
+        "Subtitle": "Without Coding",
+        "Cards": {
+            "FirstCard": {
+                "Title": "Telegram Bots Development",
+                "Description": "We make Telegram bots for your business and adapt them to your needs! Integrations, artificial intelligence and modern solutions for automation and increased efficiency.",
+                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"
+            },
+            "SecondCard": {
+                "Title": "AI Integration",
+                "Description": "We introduce artificial intelligence into your projects! Integrations, automation and modern solutions to increase efficiency and optimize your business processes.",
+                "Features": "• In a few clicks<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"    
+            },
+            "ThirdCard": {
+                "Title": "AI Integration",
+                "Description": "We introduce artificial intelligence into your projects! Integrations, automation and modern solutions to increase efficiency and optimize your business processes.",
+                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"    
+            }
+        },
+        "Messages": {
+            "FirstMessage": "We have been making bots for over 4 years.",
+            "SecondMessage": "More than 50 successful projects.",
+            "ThirdMessage": "The best and proven specialists.",
+            "FourthMessage": "AI integrations and training"
+        }
+    },
+    "OurTeam": {
+        "FirstMessage": "What advantages does your team have?",
+        "ReplyFirstMessage": "Our development team is a close-knit and friendly team, always ready to help. We are proud that our specialists not only have a high level of professionalism, but also actively care about each project. When a challenge arises, we find solutions quickly and efficiently, supporting our clients every step of the way. With us, you can be sure that any problem will be resolved promptly and efficiently. We value trust and try to create a comfortable and productive atmosphere for everyone.",
+        "SecondMessage": "Sounds intriguing!<br /> Where can I leave a request?",
+        "ReplySecondMessage": "You can always submit a request for a cost estimate using the link below. Our operator will contact you to discuss all the details and agree on the cost of development.",
+        "Button": "Order a call"
     }
 }

@@ -58,8 +58,8 @@ export const Menu = () => {
                                 <AccordionTrigger className="text-[#E3E3E3]">{t("About.Title")}</AccordionTrigger>
                                 <AccordionContent>
                                     <ul className="space-y-2 text-white text-sm font-thin">
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.AboutUs")}</a></li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.OurTeam")}</a></li>
+                                        <li><a href='/about-us' className="hover">{t("About.AboutUs")}</a></li>
+                                        <li><a href='/our-team' className="hover">{t("About.OurTeam")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DevelopmentLessons")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DataPolicy")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.PrivacyPolicy")}</a></li>

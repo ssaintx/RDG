@@ -383,3 +383,48 @@ export const casesItems = () => {
 
     return items;
 };
+
+// About us items 
+export const aboutUsItems = () => {
+    const t = useTranslations("AboutUs.Cards"); 
+
+    const items = [
+        {
+            id: 1,
+            icon: '/images/about-us/cards/first-card.svg',
+            title: t("FirstCard.Title"),
+            description: t("FirstCard.Description"),
+            features: t("FirstCard.Features"),
+        },
+        {
+            id: 2,
+            icon: '/images/about-us/cards/second-card.svg',
+            title: t("SecondCard.Title"),
+            description: t("SecondCard.Description"),
+            features: t("SecondCard.Features"),
+        },
+        {
+            id: 3,
+            icon: '/images/about-us/cards/third-card.svg',
+            title: t("ThirdCard.Title"),
+            description: t("ThirdCard.Description"),
+            features: t("ThirdCard.Features"),
+        },
+    ];
+
+    return items;
+};
+
+// About us items messages
+export const aboutUsMessages = () => {
+    const t = useTranslations("AboutUs.Messages"); 
+
+    const messages = [
+        t("FirstMessage"),
+        t("SecondMessage"),
+        t("ThirdMessage"),
+        t("FourthMessage"),
+    ];
+
+    return messages;
+};

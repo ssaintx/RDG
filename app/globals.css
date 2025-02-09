@@ -78,6 +78,16 @@ body {
   .get-started {
     @apply hidden flex-col w-full h-full sm:flex;
   }
+
+  /* ABOUT US */
+  .about-us {
+    @apply flex flex-col w-full h-full;
+  }
+
+  /* OUR TEAM */
+  .our-team {
+    @apply flex flex-col w-full h-full;
+  }
 }
 
 /* COMPONENT DESIGN */
@@ -103,7 +113,7 @@ body {
   }
 
   .btn-blur {
-    @apply !bg-backgroundPrimary/5 !backdrop-filter !backdrop-blur-xl border !border-[#AEB3D3] !rounded-full !px-8 !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !bg-backgroundPrimary/5 !backdrop-filter !backdrop-blur-xl border !border-[#AEB3D3] !text-white !rounded-full !px-8 !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 
   .btn-transparent {
@@ -111,11 +121,11 @@ body {
   }
 
   .btn-dark {
-    @apply !rounded-full !px-8 !bg-[#393939] !border-none !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !rounded-full !px-8 !bg-[#393939] !border-none !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 
   .btn-blue {
-    @apply !rounded-full !px-8 !bg-main !border-none !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !rounded-full !px-8 !bg-main !border-none !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 }
 
@@ -163,6 +173,16 @@ body {
 
   .nav-menu {
     @apply !bg-backgroundPrimary/90 !backdrop-filter !backdrop-blur-xl text-white;
+  }
+
+  .about-us-hero-bg {
+    @apply absolute w-full h-screen bg-cover bg-center bg-no-repeat -z-10;
+    background-image: url('/images/about-us/hero-bg-sm.png');
+
+    /* CROPPED BACKGROUND FOR RESPONSIVENESS */
+    @screen md {
+      background-image: url('/images/about-us/hero-bg.png');
+    }
   }
 }
 

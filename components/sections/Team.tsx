@@ -4,16 +4,16 @@ import { teamItems } from "@/constants";
 import { useTranslations } from "next-intl";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-export const Team = () => {
+export const Team = ({ dark }: { dark?: boolean}) => {
     const t = useTranslations("Team");
 
     return (
-        <section className="team">
+        <section className={`team ${dark ? 'bg-backgroundPrimary' : ''}`}>
             {/* CONTAINER */}
             <div className="flex flex-col items-center w-full container-padding container-padding-2">
                 {/* TEXT CONTAINER */}
                 <div className="flex flex-col justify-center gap-4 items-center w-full container-padding">
-                    <h1 className="text-black title-text">{t("Title")}</h1>
+                    <h1 className={`${dark ? 'text-white' : 'text-black'} title-text`}>{t("Title")}</h1>
                     <h2 className="subtitle-text text-textTertiary">{t("Subtitle")}</h2>
                 </div>
                 <div className="card-container w-full h-full mt-12">

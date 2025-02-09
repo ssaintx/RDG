@@ -241,5 +241,10 @@
     "Footer": {
         "DataPolicy": "Data processing policy",
         "PrivacyPolicy": "Privacy policy"
+    },
+    "AboutUs": {
+        "Title": "Build",
+        "Subtitle": "Without Coding",
+        "Cards": {}
     }
 }
