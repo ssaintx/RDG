@@ -57,7 +57,7 @@ export const Menu = () => {
                             <AccordionItem value="about">
                                 <AccordionTrigger className="text-[#E3E3E3]">{t("About.Title")}</AccordionTrigger>
                                 <AccordionContent>
-                                    <ul className="space-y-2 text-white text-sm font-thin">
+                                    <ul className="space-y-2 text-white text-sm font-[200]">
                                         <li><a href='/about-us' className="hover">{t("About.AboutUs")}</a></li>
                                         <li><a href='/our-team' className="hover">{t("About.OurTeam")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DevelopmentLessons")}</a></li>
@@ -69,7 +69,7 @@ export const Menu = () => {
                             <AccordionItem value="products">
                                 <AccordionTrigger className="text-[#E3E3E3]">{t("Products.Title")}</AccordionTrigger>
                                 <AccordionContent>
-                                    <ul className="space-y-2 text-white text-sm font-thin">
+                                    <ul className="space-y-2 text-white text-sm font-[200]">
                                         <li className="text-textTertiary my-1 font-light">{t("Products.Title")}</li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.TelegramBot")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.Website")}</a></li>
@@ -100,7 +100,7 @@ export const Menu = () => {
                                 <AccordionTrigger className="text-[#E3E3E3]">{t("Contacts.Title")}</AccordionTrigger>
                                 <AccordionContent>
                                     <ul className="flex flex-col space-y-2 text-white text-sm">
-                                        <div className="flex flex-col gap-2 mt-4 font-thin">
+                                        <div className="flex flex-col gap-2 mt-4 font-[200]">
                                             <a href='' target="_blank" rel="noopener noreferrer">{t("Contacts.Order")}</a>
                                             <a href='' target="_blank" rel="noopener noreferrer">{t("Contacts.Support")}</a>
                                         </div>

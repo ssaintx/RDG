@@ -12,21 +12,25 @@ export const Hero = () => {
     return (
         <section className="hero" id="home">
             {/* HERO CONTAINER  */}
-            <div className="flex flex-col items-start justify-center container-padding w-full h-full">
-                {/* HERO HEADER */}
-                <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold md:mt-36 mt-24 sm:mb-4 mb-2 leading-tight">
-                    {t("Header.Automation")}&nbsp;
-                    <span className="text-[#BBD6FE]">{t("Header.Using")}</span>&nbsp;<br />
-                    <span className="text-[#52BEFF]">{t("Header.Telegram")}</span>
-                </h1>
+            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-4 sm:gap-16">
+                {/* HERO HEADER TEXT CONTAINER */}
+                <div className="flex items-center justify-center">
+                    <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold leading-tight">
+                        {t("Header.Automation")}&nbsp;
+                        <span className="text-[#BBD6FE]">{t("Header.Using")}</span>&nbsp;<br />
+                        <span className="text-[#52BEFF]">{t("Header.Telegram")}</span>
+                    </h1>
+                </div>
 
-                {/* HERO TEXT */}
-                <p className="text-textSecondary w-full max-w-[500px] my-8">
-                    {t("Text")}
-                </p>
+                {/* HERO TEXT CONTAINER */}
+                <div className="flex items-center justify-center">
+                    <p className="text-textSecondary w-full max-w-[512px]">
+                        {t("Text")}
+                    </p>
+                </div>
 
-                {/* HERO CONTAINER */}
-                <div className="flex flex-col sm:flex-row h-full items-center gap-36 sm:gap-16 pb-6">
+                {/* HERO BUTTON CONTAINER */}
+                <div className="flex flex-col sm:flex-row items-center gap-36 sm:gap-16 pb-6">
                     {/* HERO BUTTONS */}
                     <Button className="btn-blur">
                         {t("Buttons.Order")}

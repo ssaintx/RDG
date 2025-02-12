@@ -30,7 +30,7 @@ body {
 
   /* HERO DESIGN */
   .hero {
-    @apply flex w-full h-full sm:h-screen bg-cover bg-center bg-no-repeat;
+    @apply flex w-full h-screen sm:h-[860px] bg-cover bg-center bg-no-repeat;
     background-image: url('/images/hero-bg-sm.png');
 
     /* CROPPED BACKGROUND FOR RESPONSIVENESS */
@@ -93,7 +93,7 @@ body {
 /* COMPONENT DESIGN */
 @layer components {
   .navbar {
-    @apply fixed flex flex-row items-center justify-between container-padding py-2 w-full top-0 z-30 glassmorphism border-b-[1px] border-b-backgroundSecondary;
+    @apply fixed flex flex-row items-center justify-between container-padding py-2 w-full h-full max-h-[60px] top-0 z-30 glassmorphism border-b-[1px] border-b-backgroundSecondary;
   }
 
   .footer {
