@@ -12,7 +12,7 @@ export const Navbar = () => {
             <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="select-none" />
 
             {/* DESKTOP VIEW */}
-            <div className="hidden items-center justify-center md:flex">
+            <div className="hidden items-center justify-center md:flex hover:text-textTertiary transition-all duration-300 ease-in-out">
                 <NavMenu />
             </div>
             {/* MOBILE RESPONSIVE MENU */}

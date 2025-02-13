@@ -12,7 +12,7 @@ export const Hero = () => {
     return (
         <section className="hero" id="home">
             {/* HERO CONTAINER  */}
-            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-4 sm:gap-16">
+            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-8 md:gap-16">
                 {/* HERO HEADER TEXT CONTAINER */}
                 <div className="flex items-center justify-center">
                     <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold leading-tight">
@@ -30,13 +30,13 @@ export const Hero = () => {
                 </div>
 
                 {/* HERO BUTTON CONTAINER */}
-                <div className="flex flex-col sm:flex-row items-center gap-36 sm:gap-16 pb-6">
+                <div className="flex flex-col md:flex-row items-center gap-48 md:gap-16">
                     {/* HERO BUTTONS */}
                     <Button className="btn-blur">
                         {t("Buttons.Order")}
                         <ArrowRightIcon />
                     </Button>
-                    <Button className="btn-transparent justify-self-end -translate-x-8 sm:-translate-x-0">
+                    <Button className="btn-transparent justify-self-end -translate-x-8 md:-translate-x-0 translate-y-24 md:translate-y-0">
                         {t("Buttons.Learn")}
                         <ArrowDownIcon />
                     </Button>

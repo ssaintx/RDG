@@ -30,7 +30,7 @@ body {
 
   /* HERO DESIGN */
   .hero {
-    @apply flex w-full h-screen sm:h-[860px] bg-cover bg-center bg-no-repeat;
+    @apply flex w-full h-screen md:h-[860px] bg-cover bg-center bg-no-repeat;
     background-image: url('/images/hero-bg-sm.png');
 
     /* CROPPED BACKGROUND FOR RESPONSIVENESS */
@@ -176,7 +176,7 @@ body {
   }
 
   .about-us-hero-bg {
-    @apply absolute w-full h-screen bg-cover bg-center bg-no-repeat -z-10;
+    @apply absolute w-full h-screen sm:h-[768px] bg-cover bg-center bg-no-repeat -z-10;
     background-image: url('/images/about-us/hero-bg-sm.png');
 
     /* CROPPED BACKGROUND FOR RESPONSIVENESS */

@@ -18,7 +18,7 @@ export const AboutProduct = () => {
             {/* CARDS ICON */}
             <Image src={item.icon} alt={item.title} width={40} height={40} />
             {/* CARDS TITLE */}
-            <h1 className="mt-4">{item.title}</h1>
+            <h1 className="mt-4 font-bold text-xl">{item.title}</h1>
             {/* CARDS DESCRIPTION*/}
             <p className="mt-6 text-textLight">{item.description}</p>
             {/* CARDS LINK */}

@@ -4,6 +4,7 @@ import { Team } from "../sections/Team";
 import { GetStarted } from "../sections/GetStarted";
 import { useTranslations } from "next-intl";
 import { aboutUsItems, aboutUsMessages } from "@/constants";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 export const AboutUs = () => {
     const t = useTranslations("AboutUs");
@@ -33,22 +34,32 @@ export const AboutUs = () => {
 
             {/* MESSAGES CONTAINER */}
             <div className="grid grid-cols-2 gap-4 w-full container-padding mt-12">
-                <div className="p-4 bg-backgroundSecondary text-sm sm:text-lg rounded-2xl col-start-1 row-start-1">
+                {/* FIRST MESSAGE */}
+                <div className="flex items-center justify-center p-4 bg-backgroundSecondary sm:text-lg rounded-2xl col-start-1 row-start-1">
                     {t("Messages.FirstMessage")}
                 </div>
+                {/* BORDER LINE */}
                 <div className="w-[50%] mt-8 col-start-2 row-start-1 border-[2px] border-b-0 border-l-0 rounded-tr-full border-dashed" />
-                <div className="flex items-center justify-end w-full p-4 bg-backgroundSecondary text-sm sm:text-lg rounded-2xl col-start-2 row-start-2">
+                {/* SECOND MESSAGE */}
+                <div className="flex items-center justify-center w-full p-4 bg-backgroundSecondary sm:text-lg rounded-2xl col-start-2 row-start-2">
                     {t("Messages.SecondMessage")}
                 </div>
-                <div className="ml-9 sm:ml-18 lg:ml-36 mt-8 col-start-1 row-start-2 border-[2px] border-b-0 border-r-0 rounded-tl-full border-dashed" />
-                <div className="p-4 bg-backgroundSecondary text-sm sm:text-lg rounded-2xl col-start-1 row-start-3">
+                {/* BORDER LINE */}
+                <div className="ml-9 sm:ml-36 lg:ml-64 mt-8 col-start-1 row-start-2 border-[2px] border-b-0 border-r-0 rounded-tl-full border-dashed" />
+                {/* THIRD MESSAGE */}
+                <div className="flex items-center justify-center p-4 bg-backgroundSecondary sm:text-lg rounded-2xl col-start-1 row-start-3">
                     {t("Messages.ThirdMessage")}
                 </div>
+                {/* BORDER LINE */}
                 <div className="w-[50%] mt-8 col-start-2 row-start-3 border-[2px] border-b-0 border-l-0 rounded-tr-full border-dashed" />
-                <div className="flex items-center justify-end w-full p-4 bg-backgroundSecondary text-sm sm:text-lg rounded-2xl col-start-2 row-start-4">
+                {/* FOURTH MESSAGE */}
+                <div className="flex items-center justify-center w-full p-4 bg-backgroundSecondary sm:text-lg rounded-2xl col-start-2 row-start-4">
                     {t("Messages.FourthMessage")}
                 </div>
-                <div className="ml-9 sm:ml-18 lg:ml-36 mt-8 col-start-1 row-start-4 border-[2px] border-b-0 border-r-0 rounded-tl-full border-dashed" />
+                {/* BORDER LINE */}
+                <div className="ml-9 sm:ml-36 lg:ml-64 mt-8 col-start-1 row-start-4 border-[2px] border-b-0 border-r-0 rounded-tl-full border-dashed flex justify-start items-end">
+                    <ChevronDownIcon className="-translate-x-3 translate-y-2 size-6 text-bold" />
+                </div>
             </div>
             {/* OTHER COMPONENTS */}
             <Team dark />
