@@ -60,7 +60,7 @@ export const productsItems = () => {
         },
         {
             title: t("GPTs"),
-            href: "",
+            href: "/gpts",
         },
         {
             title: t("DevelopmentAI"),

@@ -275,5 +275,17 @@
         "SecondMessage": "Sounds intriguing!<br /> Where can I leave a request?",
         "ReplySecondMessage": "You can always submit a request for a cost estimate using the link below. Our operator will contact you to discuss all the details and agree on the cost of development.",
         "Button": "Order a call"
+    },
+    "Gpts": {
+        "Title": "Connect GPTs with our Plugin!",
+        "Tabs": {
+            "FirstTab": "All",
+            "SecondTab": "Image",
+            "ThirdTab": "Compilation by text",
+            "FourthTab": "Performance",
+            "FifthTab": "Research and analysis",
+            "SixthTab": "Education",
+            "SeventhTab": "Lifestyle"
+        }
     }
 }

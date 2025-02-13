@@ -16,12 +16,14 @@ body {
     @apply bg-backgroundPrimary text-textPrimary;
   }
 
+  /* Scrollbar Track */
   ::-webkit-scrollbar {
-    @apply w-1 rounded-full glassmorphism;
+    @apply w-1 h-1 rounded-full glassmorphism; /* Set height to 1px */
   }
 
+  /* Scrollbar Thumb */
   ::-webkit-scrollbar-thumb {
-    @apply bg-main rounded-full hover:bg-[#BBD6FE] transition ease-in-out duration-300;
+    @apply bg-backgroundSecondary rounded-full hover:bg-textTertiary transition ease-in-out duration-300;
   }
 }
 
@@ -86,6 +88,11 @@ body {
 
   /* OUR TEAM */
   .our-team {
+    @apply flex flex-col w-full h-full;
+  }
+
+  /* GPTs */
+  .gpts {
     @apply flex flex-col w-full h-full;
   }
 }
@@ -184,6 +191,13 @@ body {
       background-image: url('/images/about-us/hero-bg.png');
     }
   }
+
+  .gradient-text {
+    background: linear-gradient(to right, #2388FF, #0038FF, #7000FF, #CC00FF, #FF6B00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 }
 
 /* SHADCN UI COMPONENT COLORS*/
