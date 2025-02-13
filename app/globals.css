@@ -93,7 +93,7 @@ body {
 
   /* GPTs */
   .gpts {
-    @apply flex flex-col w-full h-full;
+    @apply flex flex-col w-full h-full mb-16;
   }
 }
 
@@ -133,6 +133,10 @@ body {
 
   .btn-blue {
     @apply !rounded-full !px-8 !bg-main !border-none !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+  }
+
+  .btn-full {
+    @apply !rounded-full !border-[2px] !border-[#808099] !bg-transparent !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
   }
 }
 

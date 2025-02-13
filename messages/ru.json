@@ -286,6 +286,45 @@
             "FifthTab": "Research and analysis",
             "SixthTab": "Education",
             "SeventhTab": "Lifestyle"
-        }
+        },
+        "Cards": {
+            "FirstCard": {
+                "Title": "AI Chat",
+                "Description": "A dialog tool that provides natural real-time communication with artificial intelligence, many models to choose from, all in one subscription.",
+                "ConnectButton": "Connect"
+            },
+            "SecondCard": {
+                "Title": "AI Analytic",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Connect"
+            },
+            "ThirdCard": {
+                "Title": "AI Video",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Connect"
+            },
+            "FourthCard": {
+                "Title": "Creative",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Very soon"
+            },
+            "FifthCard": {
+                "Title": "Data Analyst",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Soon"
+            },
+            "SixthCard": {
+                "Title": "Controller",
+                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
+                "ConnectButton": "Soon"
+            }
+        },
+        "Titles": {
+            "FirstTitle": "Featured",
+            "SecondTitle": "From Puzzle AI",
+            "ThirdTitle": "Images",
+            "FourthTitle": "Compilation by text"
+        },
+        "SeeMore": "See more"
     }
 }

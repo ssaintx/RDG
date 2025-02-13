@@ -428,3 +428,60 @@ export const aboutUsMessages = () => {
 
     return messages;
 };
+
+export const gptsItems = () => {
+    const t = useTranslations("Gpts.Cards");
+
+    const items = [
+        {
+            id: 1,
+            image: '/images/gpts/first-card.png',
+            title: t('FirstCard.Title'),
+            description: t('FirstCard.Description'),
+            button: t('FirstCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 2,
+            image: '/images/gpts/second-card.png',
+            title: t('SecondCard.Title'),
+            description: t('SecondCard.Description'),
+            button: t('SecondCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 3,
+            image: '/images/gpts/third-card.png',
+            title: t('ThirdCard.Title'),
+            description: t('ThirdCard.Description'),
+            button: t('ThirdCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 4,
+            image: '/images/gpts/fourth-card.png',
+            title: t('FourthCard.Title'),
+            description: t('FourthCard.Description'),
+            button: t('FourthCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 5,
+            image: '/images/gpts/fifth-card.png',
+            title: t('FifthCard.Title'),
+            description: t('FifthCard.Description'),
+            button: t('FifthCard.ConnectButton'),
+            link: '',
+        },
+        {
+            id: 6,
+            image: '/images/gpts/sixth-card.png',
+            title: t('SixthCard.Title'),
+            description: t('SixthCard.Description'),
+            button: t('SixthCard.ConnectButton'),
+            link: '',
+        },
+    ];
+
+    return items;
+}
