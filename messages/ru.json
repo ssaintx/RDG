@@ -1,330 +1,330 @@
 {
     "Navbar": {
         "About": {
-            "Title": "About the company",
-            "AboutUs": "About us",
-            "OurTeam": "Our Team",
-            "DevelopmentLessons": "Development lessons",
-            "DataPolicy": "Data processing policy",
-            "PrivacyPolicy": "Privacy policy"
+            "Title": "О компании",
+            "AboutUs": "О нас",
+            "OurTeam": "Наша команда",
+            "DevelopmentLessons": "Уроки разработки",
+            "DataPolicy": "Политика обработки данных",
+            "PrivacyPolicy": "Политика конфиденциальности"
         },
         "Products": {
-            "Title": "Products",
-            "TelegramBot": "Telegram bot development",
-            "Website": "Website development",
-            "AI": "Connecting AI",
-            "Solutions": "Our Solutions",
-            "UsingAI": "Using AI",
-            "BotDevelopment": "Bot development training",
-            "AI2": "AI",
-            "ConnectionPlugin": "AI connection plugin",
+            "Title": "Продукты",
+            "TelegramBot": "Разработка Telegram-ботов",
+            "Website": "Разработка веб-сайтов",
+            "AI": "Подключение ИИ",
+            "Solutions": "Наши решения",
+            "UsingAI": "Использование ИИ",
+            "BotDevelopment": "Обучение разработке ботов",
+            "AI2": "ИИ",
+            "ConnectionPlugin": "Плагин подключения ИИ",
             "GPTs": "GPTs",
-            "DevelopmentAI": "Development of AI assistants"
+            "DevelopmentAI": "Разработка ИИ-ассистентов"
         },
         "Partners": {
-            "Title": "Partners",
+            "Title": "Партнеры",
             "FirstPartner": {
                 "Title": "Pixel Bot",
-                "Description": "AI tool development service."
+                "Description": "Сервис разработки инструментов на базе ИИ."
             }
         },
         "Contacts": {
-            "Title": "Contacts",
-            "Order": "Order bot",
-            "Support": "Support",
+            "Title": "Контакты",
+            "Order": "Заказать бота",
+            "Support": "Поддержка",
             "NewsChannel": {
-                "Title": "News Channel",
-                "Description": "Our news channel in telegram."
+                "Title": "Новостной канал",
+                "Description": "Наш новостной канал в Telegram."
             }
         }
     },
     "Hero": {
         "Header": {
-            "Automation": "Automation",
-            "Using": "using",
-            "Telegram": "Telegram bot"
+            "Automation": "Автоматизация",
+            "Using": "с помощью",
+            "Telegram": "Telegram-бота"
         },
-        "Text": "Telegram bots for business automate tasks, improving customer interaction and increasing efficiency. They answer questions, collect data, manage orders, and integrate with CRM systems to provide 24/7 support and streamline workflows.",
+        "Text": "Telegram-боты для бизнеса автоматизируют задачи, улучшая взаимодействие с клиентами и повышая эффективность. Они отвечают на вопросы, собирают данные, управляют заказами и интегрируются с CRM-системами для обеспечения круглосуточной поддержки и оптимизации рабочих процессов.",
         "Buttons": {
-            "Order": "Order a bot",
-            "Learn": "Learn more"
+            "Order": "Заказать бота",
+            "Learn": "Узнать больше"
         }
     },
     "AboutProduct": {
         "FirstCard": {
-            "Title": "50+ Professional Cases",
-            "Description": "Discover over 50 professional case studies showcasing successful projects in Telegram bot development. Get inspired and explore the full potential of our services.",
-            "Url": "View cases"
+            "Title": "50+ Профессиональных Кейсов",
+            "Description": "Откройте для себя более 50 профессиональных кейсов, демонстрирующих успешные проекты в разработке Telegram-ботов. Вдохновитесь и изучите весь потенциал наших услуг.",
+            "Url": "Смотреть кейсы"
         },
         "SecondCard": {
-            "Title": "Expert Developers",
-            "Description": "Our top specialists are masters in AI and proficient in integrating various features. They provide continuous technical support, ensuring your project’s success from start to finish. Experience the best in the industry with our dedicated and highly skilled team.",
-            "Url": "View Team"
+            "Title": "Экспертные Разработчики",
+            "Description": "Наши лучшие специалисты – мастера в области ИИ и профессионалы в интеграции различных функций. Они обеспечивают постоянную техническую поддержку, гарантируя успех вашего проекта от начала и до конца. Оцените лучшее в индустрии с нашей преданной и высококвалифицированной командой.",
+            "Url": "Посмотреть команду"
         },
         "ThirdCard": {
-            "Title": "Fast Project Development",
-            "Description": "Our specialists ensure rapid development within set timelines, delivering projects punctually and without compromise. With expertise in AI and feature integration, they provide continuous technical support for your project’s success."
+            "Title": "Быстрая Разработка Проектов",
+            "Description": "Наши специалисты обеспечивают быструю разработку в установленные сроки, предоставляя проекты вовремя и без компромиссов. Обладая опытом в области ИИ и интеграции функций, они обеспечивают постоянную техническую поддержку для успеха вашего проекта."
         },
         "FourthCard": {
-            "Title": "Seamless API Integrations",
-            "Description": "Our specialists provide extensive API integrations, enabling the incorporation of third-party functionalities and resources to enhance your business."
+            "Title": "Бесшовная Интеграция API",
+            "Description": "Наши специалисты предоставляют широкие возможности интеграции API, позволяя включать сторонние функции и ресурсы для расширения возможностей вашего бизнеса."
         },
         "FifthCard": {
-            "Title": "Easy Bot Editing with PuzzleBot",
-            "Description": "Our bots are built using the PuzzleBot constructor, ensuring simplicity in editing and customization. For added flexibility, we also integrate with other constructors as needed to meet your business requirements."
+            "Title": "Легкое Редактирование Ботов с PuzzleBot",
+            "Description": "Наши боты созданы с использованием конструктора PuzzleBot, что обеспечивает простоту редактирования и кастомизации. Для дополнительной гибкости мы также интегрируемся с другими конструкторами по мере необходимости для удовлетворения потребностей вашего бизнеса."
         }
     },
     "InfoPanel": {
         "FirstCard": {
-            "Title": "Artificial Intelligence",
-            "Description": "GPT-4 transforms the customer support process by automatically processing user requests. A bot equipped with this text neural network answers frequently asked questions, provides personalized recommendations, and helps with navigation through products and services. This reduces operator workload, speeds response times and improves service quality, leading to increased customer satisfaction and business efficiency.<br/><br/>Neural networks automate accounting processes by processing transactions, keeping records of financial transactions and creating reports. Integrating such AI solutions into your Telegram bot allows you to reduce time for routine tasks, reduce the likelihood of errors and ensure transparency of financial data. This frees up employees to perform strategic tasks, increasing overall productivity and accounting accuracy.<br/><br/>DALL-E 3 and Suno AI enhance the capabilities of your Telegram bot by generating unique content. DALL-E 3 produces high-quality images on demand, useful for marketing materials, illustrations and personalized visuals. Suno AI generates music tracks that can be used to create unique audiovisual experiences for users. This attracts attention and increases engagement by offering customers innovative and creative solutions.",
-            "Url": "Learn more about models"
+            "Title": "Искусственный Интеллект",
+            "Description": "GPT-4 трансформирует процесс поддержки клиентов, автоматически обрабатывая запросы пользователей. Бот, оснащенный этой текстовой нейронной сетью, отвечает на часто задаваемые вопросы, предоставляет персонализированные рекомендации и помогает с навигацией по продуктам и услугам. Это снижает нагрузку на операторов, ускоряет время ответа и повышает качество обслуживания, что ведет к повышению удовлетворенности клиентов и эффективности бизнеса.<br/><br/>Нейронные сети автоматизируют процессы бухгалтерского учета, обрабатывая транзакции, ведя учет финансовых операций и создавая отчеты. Интеграция таких ИИ-решений в ваш Telegram-бот позволяет сократить время на рутинные задачи, снизить вероятность ошибок и обеспечить прозрачность финансовых данных. Это освобождает сотрудников для выполнения стратегических задач, повышая общую производительность и точность учета.<br/><br/>DALL-E 3 и Suno AI расширяют возможности вашего Telegram-бота, генерируя уникальный контент. DALL-E 3 производит высококачественные изображения по запросу, полезные для маркетинговых материалов, иллюстраций и персонализированных визуальных эффектов. Suno AI генерирует музыкальные треки, которые можно использовать для создания уникальных аудиовизуальных впечатлений для пользователей. Это привлекает внимание и повышает вовлеченность, предлагая клиентам инновационные и креативные решения.",
+            "Url": "Узнать больше о моделях"
         },
         "SecondCard": {
             "Title": "GPT-4o",
-            "Description": "GPT-4 and GPT Vision provide: response automation, content creation, translation and localization, data analysis, interaction personalization, smart recommendations, quality natural language processing, image analysis, object and text recognition (OCR), generation of descriptions for visual content, enhancement user experience through intuitive interfaces."
+            "Description": "GPT-4 и GPT Vision обеспечивают: автоматизацию ответов, создание контента, перевод и локализацию, анализ данных, персонализацию взаимодействия, умные рекомендации, качественную обработку естественного языка, анализ изображений, распознавание объектов и текста (OCR), генерацию описаний для визуального контента, улучшение пользовательского опыта через интуитивно понятные интерфейсы."
         },
         "ThirdCard": {
             "Title": "Midjourney",
-            "Description": "Midjourney provides: generating unique images from text descriptions, creating illustrations for marketing and advertising, visualizing ideas and concepts, developing product design and branding, creating art for games and animation, automating graphic content, improving user experience with personalized visual elements."
+            "Description": "Midjourney обеспечивает: генерацию уникальных изображений из текстовых описаний, создание иллюстраций для маркетинга и рекламы, визуализацию идей и концепций, разработку дизайна продуктов и брендинга, создание арта для игр и анимации, автоматизацию графического контента, улучшение пользовательского опыта с помощью персонализированных визуальных элементов."
         },
         "FourthCard": {
             "Title": "Suno AI",
-            "Description": "Suno AI provides: generation of unique music tracks, creation of background music for videos and podcasts, adaptation of music content to a brand, automation of music for games and applications, creation of jingles and audio screensavers, improvement of user experience through personalized musical elements."
+            "Description": "Suno AI обеспечивает: генерацию уникальных музыкальных треков, создание фоновой музыки для видео и подкастов, адаптацию музыкального контента к бренду, автоматизацию музыки для игр и приложений, создание джинглов и аудио заставок, улучшение пользовательского опыта с помощью персонализированных музыкальных элементов."
         }
     },
     "ConnectGPT": {
-        "Title": "Connect GPTs",
-        "Subtitle": "Connect GPTs to your bot in a couple of clicks.",
+        "Title": "Подключите GPT",
+        "Subtitle": "Подключите GPT к своему боту в пару кликов.",
         "Cards": {
             "FirstCard": {
                 "Title": "AI Chat",
-                "Description": "A dialog tool that provides natural real-time communication with artificial intelligence, many models to choose from, all in one subscription.",
-                "ConnectButton": "Connect"
+                "Description": "Инструмент диалога, обеспечивающий естественное общение в реальном времени с искусственным интеллектом, множество моделей на выбор, все в одной подписке.",
+                "ConnectButton": "Подключить"
             },
             "SecondCard": {
                 "Title": "AI Analytic",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Connect"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Подключить"
             },
             "ThirdCard": {
                 "Title": "AI Video",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Connect"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Подключить"
             }
         },
-        "Button": "View list of GPTs"
+        "Button": "Смотреть список GPT"
     },
     "Commissions": {
-        "Title": "Affiliate reward of 15% for referred client",
-        "Subtitle": "Invite future customers through the loyalty program and receive 15% of the amount of a successful order.",
-        "InviteClient": "Invite a client",
-        "LearnMore": "Learn more"
+        "Title": "Партнерское вознаграждение 15% за приведенного клиента",
+        "Subtitle": "Приглашайте будущих клиентов через программу лояльности и получайте 15% от суммы успешного заказа.",
+        "InviteClient": "Пригласить клиента",
+        "LearnMore": "Узнать больше"
     },
     "Features": {
-        "Title": "Features",
+        "Title": "Возможности",
         "Cards": {
             "FirstCard": {
-                "Title": "Security",
-                "Description": "Control the bot and all internal processes without worrying about security.ot and all internal processes."
+                "Title": "Безопасность",
+                "Description": "Контролируйте бота и все внутренние процессы, не беспокоясь о безопасности.ot и все внутренние процессы."
             },
             "SecondCard": {
-                "Title": "Payments",
-                "Description": "Accept payments in Telegram Stars local currency, cryptocurrency or to a card."
+                "Title": "Платежи",
+                "Description": "Принимайте платежи в местной валюте Telegram Stars, криптовалюте или на карту."
             },
             "ThirdCard": {
-                "Title": "Notifications",
-                "Description": "Receive notifications about your users' activities."
+                "Title": "Уведомления",
+                "Description": "Получайте уведомления об активности ваших пользователей."
             },
             "FourthCard": {
-                "Title": "AI Analytics",
-                "Description": "Our bots leverage advanced AI to regularly analyze traffic, purchases, and sales, providing valuable insights for your business. This continuous analysis helps you understand customer behavior, optimize marketing strategies, and boost sales. With our AI-powered bots, you can make data-driven decisions to enhance your business performance."
+                "Title": "Аналитика ИИ",
+                "Description": "Наши боты используют передовой ИИ для регулярного анализа трафика, покупок и продаж, предоставляя ценные инсайты для вашего бизнеса. Этот непрерывный анализ помогает вам понимать поведение клиентов, оптимизировать маркетинговые стратегии и увеличивать продажи. С нашими ботами на базе ИИ вы можете принимать решения на основе данных для повышения эффективности вашего бизнеса."
             },
             "FifthCard": {
-                "Title": "Effortless Management",
-                "Description": "Easily handle interactions, update functionalities, and customize your bot to meet your business needs. Enjoy a straightforward and efficient bot management experience supported by our experts. Effortlessly track user activity, automate routine tasks, and integrate third-party services to enhance your bot’s capabilities. Our intuitive interface ensures you can make adjustments on the fly, keeping your bot up-to-date and aligned with your business goals. Rely on our team for ongoing support and optimization, ensuring your bot delivers maximum value."
+                "Title": "Легкое Управление",
+                "Description": "Легко управляйте взаимодействиями, обновляйте функциональные возможности и настраивайте своего бота в соответствии с потребностями вашего бизнеса. Наслаждайтесь простым и эффективным управлением ботом при поддержке наших экспертов. Легко отслеживайте активность пользователей, автоматизируйте рутинные задачи и интегрируйте сторонние сервисы для расширения возможностей вашего бота. Наш интуитивно понятный интерфейс гарантирует, что вы сможете вносить коррективы на ходу, поддерживая актуальность вашего бота и соответствие целям вашего бизнеса. Положитесь на нашу команду для постоянной поддержки и оптимизации, обеспечивая максимальную ценность вашего бота."
             }
         }
     },
     "Team": {
-        "Title": "Our team",
-        "Subtitle": "Meet our team of developers, managers and operators.",
+        "Title": "Наша команда",
+        "Subtitle": "Познакомьтесь с нашей командой разработчиков, менеджеров и операторов.",
         "Cards": {
             "FirstCard": {
                 "Name": "Aziz",
-                "Role": "CEO, Developer, Designer",
-                "About": "Co-founder of RDG and Puzzle AI, the designer of this site is an experienced specialist in the field of Telegram bots and AI.",
-                "Portfolio": "Portfolio"
+                "Role": "CEO, Разработчик, Дизайнер",
+                "About": "Сооснователь RDG и Puzzle AI, дизайнер этого сайта — опытный специалист в области Telegram-ботов и ИИ.",
+                "Portfolio": "Портфолио"
             },
             "SecondCard": {
                 "Name": "George",
-                "Role": "CEO, Developer, Layout Designer",
-                "About": "Co-founder of RDG and Puzzle AI, layout designer, front-end and back-end developer.",
-                "Portfolio": "Portfolio"
+                "Role": "CEO, Разработчик, Верстальщик",
+                "About": "Сооснователь RDG и Puzzle AI, верстальщик, front-end и back-end разработчик.",
+                "Portfolio": "Портфолио"
             },
             "ThirdCard": {
                 "Name": "Max",
-                "Role": "CEO, Developer, SMM",
-                "About": "Text",
-                "Portfolio": "Portfolio"
+                "Role": "CEO, Разработчик, SMM",
+                "About": "Текст",
+                "Portfolio": "Портфолио"
             },
             "FourthCard": {
                 "Name": "Alexander",
-                "Role": "CEO, Developer, AI Specialist",
-                "About": "AI Bots professional developer. Founder of Puzzle AI bot & Plugin (1600 AI bots connected)",
-                "Portfolio": "Portfolio"
+                "Role": "CEO, Разработчик, Специалист по ИИ",
+                "About": "Профессиональный разработчик ИИ-ботов. Основатель Puzzle AI bot & Plugin (1600 ИИ-ботов подключено)",
+                "Portfolio": "Портфолио"
             },
             "FifthCard": {
                 "Name": "Michael",
-                "Role": "Sales Manager",
-                "About": "Text",
-                "Portfolio": "Portfolio"
+                "Role": "Менеджер по продажам",
+                "About": "Текст",
+                "Portfolio": "Портфолио"
             },
             "SixthCard": {
                 "Name": "Aqua",
-                "Role": "Technical Support",
-                "About": "Text",
-                "Portfolio": "Portfolio"
+                "Role": "Техническая поддержка",
+                "About": "Текст",
+                "Portfolio": "Портфолио"
             },
             "SeventhCard": {
                 "Name": "Vsevolod",
-                "Role": "Developer",
-                "About": "Middle Python developer. Development of bots and web applications for Telegram.",
-                "Portfolio": "Portfolio"
+                "Role": "Разработчик",
+                "About": "Middle Python разработчик. Разработка ботов и веб-приложений для Telegram.",
+                "Portfolio": "Портфолио"
             }
         }
     },
     "Cases": {
-        "Title": "Cases",
-        "Subtitle": "You can study the successful projects of our team",
+        "Title": "Кейсы",
+        "Subtitle": "Вы можете изучить успешные проекты нашей команды",
         "Cards": {
             "FirstCard": {
                 "Title": "Pixel Store",
-                "Description": "Large store and catalog of AI bots, from professional developers.",
-                "Url": "Open bot"
+                "Description": "Крупный магазин и каталог ИИ-ботов от профессиональных разработчиков.",
+                "Url": "Открыть бота"
             },
             "SecondCard": {
-                "Title": "Assistant Oleonka",
-                "Description": "The best and safest telegram assistant with great functionality.",
-                "Url": "Open bot"
+                "Title": "Ассистент Олеонка",
+                "Description": "Лучший и самый безопасный Telegram-ассистент с отличной функциональностью.",
+                "Url": "Открыть бота"
             },
             "ThirdCard": {
                 "Title": "Puzzle AI Bot",
-                "Description": "OpenAI GPT-4, DALLE-3, Midjourney, Suno and other best AI models",
-                "Url": "Open bot"
+                "Description": "OpenAI GPT-4, DALLE-3, Midjourney, Suno и другие лучшие модели ИИ",
+                "Url": "Открыть бота"
             },
             "FourthCard": {
                 "Title": "Games island",
-                "Description": "One of the first gaming bots in telegram in web-app mode.",
-                "Url": "Open bot"
+                "Description": "Один из первых игровых ботов в Telegram в режиме веб-приложения.",
+                "Url": "Открыть бота"
             },
             "FifthCard": {
                 "Title": "PuzzleBot Controller",
-                "Description": "A tool for managing your PuzzleBot bots without leaving Telegram.",
-                "Url": "Open bot"
+                "Description": "Инструмент для управления вашими ботами PuzzleBot, не покидая Telegram.",
+                "Url": "Открыть бота"
             },
             "SixthCard": {
                 "Title": "Black Snow",
-                "Description": "The first game with a plot taking place in a nuclear winter.",
-                "Url": "Open bot"
+                "Description": "Первая игра с сюжетом, действие которой происходит в ядерной зиме.",
+                "Url": "Открыть бота"
             }
         },
-        "MoreCases": "More cases on Pixel Store",
-        "OrderBot": "Order a bot"
+        "MoreCases": "Больше кейсов в Pixel Store",
+        "OrderBot": "Заказать бота"
     },
     "GetStarted": {
-        "Title": "Ready to get started?",
-        "Subtitle": "We want to make the world a better place using process automation.",
-        "OrderBot": "Order a bot",
-        "About": "About the team"
+        "Title": "Готовы начать?",
+        "Subtitle": "Мы хотим сделать мир лучше, используя автоматизацию процессов.",
+        "OrderBot": "Заказать бота",
+        "About": "О команде"
     },
     "Footer": {
-        "DataPolicy": "Data processing policy",
-        "PrivacyPolicy": "Privacy policy"
+        "DataPolicy": "Политика обработки данных",
+        "PrivacyPolicy": "Политика конфиденциальности"
     },
     "AboutUs": {
-        "Title": "Build",
-        "Subtitle": "Without Coding",
+        "Title": "Создавайте",
+        "Subtitle": "Без Кодирования",
         "Cards": {
             "FirstCard": {
-                "Title": "Telegram Bots Development",
-                "Description": "We make Telegram bots for your business and adapt them to your needs! Integrations, artificial intelligence and modern solutions for automation and increased efficiency.",
-                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"
+                "Title": "Разработка Telegram-ботов",
+                "Description": "Мы делаем Telegram-ботов для вашего бизнеса и адаптируем их под ваши нужды! Интеграции, искусственный интеллект и современные решения для автоматизации и повышения эффективности.",
+                "Features": "• Быстрая разработка<br/>• Постоянная поддержка<br/>• Исправление ошибок и улучшения<br/>• Лучшие специалисты>"
             },
             "SecondCard": {
-                "Title": "AI Integration",
-                "Description": "We introduce artificial intelligence into your projects! Integrations, automation and modern solutions to increase efficiency and optimize your business processes.",
-                "Features": "• In a few clicks<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"    
+                "Title": "Интеграция ИИ",
+                "Description": "Мы внедряем искусственный интеллект в ваши проекты! Интеграции, автоматизация и современные решения для повышения эффективности и оптимизации бизнес-процессов.",
+                "Features": "• В несколько кликов<br/>• Постоянная поддержка<br/>• Исправление ошибок и улучшения<br/>• Лучшие специалисты>"
             },
             "ThirdCard": {
-                "Title": "AI Integration",
-                "Description": "We introduce artificial intelligence into your projects! Integrations, automation and modern solutions to increase efficiency and optimize your business processes.",
-                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"    
+                "Title": "Интеграция ИИ",
+                "Description": "Мы внедряем искусственный интеллект в ваши проекты! Интеграции, автоматизация и современные решения для повышения эффективности и оптимизации бизнес-процессов.",
+                "Features": "• Быстрая разработка<br/>• Постоянная поддержка<br/>• Исправление ошибок и улучшения<br/>• Лучшие специалисты>"
             }
         },
         "Messages": {
-            "FirstMessage": "We have been making bots for over 4 years.",
-            "SecondMessage": "More than 50 successful projects.",
-            "ThirdMessage": "The best and proven specialists.",
-            "FourthMessage": "AI integrations and training"
+            "FirstMessage": "Мы делаем ботов более 4 лет.",
+            "SecondMessage": "Более 50 успешных проектов.",
+            "ThirdMessage": "Лучшие и проверенные специалисты.",
+            "FourthMessage": "Интеграции ИИ и обучение"
         }
     },
     "OurTeam": {
-        "FirstMessage": "What advantages does your team have?",
-        "ReplyFirstMessage": "Our development team is a close-knit and friendly team, always ready to help. We are proud that our specialists not only have a high level of professionalism, but also actively care about each project. When a challenge arises, we find solutions quickly and efficiently, supporting our clients every step of the way. With us, you can be sure that any problem will be resolved promptly and efficiently. We value trust and try to create a comfortable and productive atmosphere for everyone.",
-        "SecondMessage": "Sounds intriguing!<br /> Where can I leave a request?",
-        "ReplySecondMessage": "You can always submit a request for a cost estimate using the link below. Our operator will contact you to discuss all the details and agree on the cost of development.",
-        "Button": "Order a call"
+        "FirstMessage": "Какие преимущества у вашей команды?",
+        "ReplyFirstMessage": "Наша команда разработчиков – это сплоченный и дружный коллектив, всегда готовый помочь. Мы гордимся тем, что наши специалисты не только обладают высоким уровнем профессионализма, но и активно заботятся о каждом проекте. Когда возникает вызов, мы находим решения быстро и эффективно, поддерживая наших клиентов на каждом шагу. С нами вы можете быть уверены, что любая проблема будет решена оперативно и качественно. Мы ценим доверие и стараемся создать комфортную и продуктивную атмосферу для каждого.",
+        "SecondMessage": "Звучит интригующе!<br /> Куда можно оставить заявку?",
+        "ReplySecondMessage": "Вы всегда можете оставить заявку на оценку стоимости, воспользовавшись ссылкой ниже. Наш оператор свяжется с вами, чтобы обсудить все детали и согласовать стоимость разработки.",
+        "Button": "Заказать звонок"
     },
     "Gpts": {
-        "Title": "Connect GPTs with our Plugin!",
+        "Title": "Подключайте GPT с нашим плагином!",
         "Tabs": {
-            "FirstTab": "All",
-            "SecondTab": "Image",
-            "ThirdTab": "Compilation by text",
-            "FourthTab": "Performance",
-            "FifthTab": "Research and analysis",
-            "SixthTab": "Education",
-            "SeventhTab": "Lifestyle"
+            "FirstTab": "Все",
+            "SecondTab": "Изображения",
+            "ThirdTab": "Компиляция по тексту",
+            "FourthTab": "Производительность",
+            "FifthTab": "Исследования и анализ",
+            "SixthTab": "Образование",
+            "SeventhTab": "Стиль жизни"
         },
         "Cards": {
             "FirstCard": {
                 "Title": "AI Chat",
-                "Description": "A dialog tool that provides natural real-time communication with artificial intelligence, many models to choose from, all in one subscription.",
-                "ConnectButton": "Connect"
+                "Description": "Инструмент диалога, обеспечивающий естественное общение в реальном времени с искусственным интеллектом, множество моделей на выбор, все в одной подписке.",
+                "ConnectButton": "Подключить"
             },
             "SecondCard": {
                 "Title": "AI Analytic",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Connect"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Подключить"
             },
             "ThirdCard": {
                 "Title": "AI Video",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Connect"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Подключить"
             },
             "FourthCard": {
                 "Title": "Creative",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Very soon"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Очень скоро"
             },
             "FifthCard": {
                 "Title": "Data Analyst",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Soon"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Скоро"
             },
             "SixthCard": {
                 "Title": "Controller",
-                "Description": "Allows you to create a virtual persona from Youtube videos for conversation and recelving answers on any topic from their perspective.",
-                "ConnectButton": "Soon"
+                "Description": "Позволяет создать виртуальную персону из видео на Youtube для общения и получения ответов на любую тему с их точки зрения.",
+                "ConnectButton": "Скоро"
             }
         },
         "Titles": {
-            "FirstTitle": "Featured",
-            "SecondTitle": "From Puzzle AI",
-            "ThirdTitle": "Images",
-            "FourthTitle": "Compilation by text"
+            "FirstTitle": "Избранное",
+            "SecondTitle": "От Puzzle AI",
+            "ThirdTitle": "Изображения",
+            "FourthTitle": "Компиляция по тексту"
         },
-        "SeeMore": "See more"
+        "SeeMore": "Смотреть больше"
     }
 }

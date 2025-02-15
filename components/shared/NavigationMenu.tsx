@@ -16,20 +16,28 @@ import {
 import {
     aboutItems,
     partnersItems,
-    productsItems
+    productsItems,
 } from "@/constants";
 
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export const NavMenu = () => {
     const t = useTranslations("Navbar");
+    const pathname = usePathname();
 
     return (
         <NavigationMenu>
             <NavigationMenuList>
                 {/* ABOUT ITEM */}
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>{t("About.Title")}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={cn(
+                        "hover:text-white transition-all duration-300 ease-in-out",
+                        pathname === '/about-us' || pathname === '/our-team' ? 'text-white' : ''
+                    )}
+                    >
+                        {t("About.Title")}
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="nav-menu">
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                             {aboutItems().map((item) => (
@@ -44,7 +52,14 @@ export const NavMenu = () => {
                 </NavigationMenuItem>
                 {/* PRODUCTS ITEM */}
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>{t("Products.Title")}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger
+                        className={cn(
+                            "hover:text-white transition-all duration-300 ease-in-out",
+                            pathname === '/gpts' ? 'text-white' : ''
+                        )}
+                    >
+                        {t("Products.Title")}
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="nav-menu">
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                             {productsItems().map((item) => (

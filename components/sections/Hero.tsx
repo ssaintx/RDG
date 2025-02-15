@@ -12,7 +12,7 @@ export const Hero = () => {
     return (
         <section className="hero" id="home">
             {/* HERO CONTAINER  */}
-            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-8 md:gap-16">
+            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-8 md:gap-16 mt-28 md:mt-0 pb-28 md:pb-0">
                 {/* HERO HEADER TEXT CONTAINER */}
                 <div className="flex items-center justify-center">
                     <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold leading-tight">

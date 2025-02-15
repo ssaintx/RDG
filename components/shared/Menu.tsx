@@ -79,7 +79,7 @@ export const Menu = () => {
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.BotDevelopment")}</a></li>
                                         <li className="text-textTertiary my-1 font-light">{t("Products.AI2")}</li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.ConnectionPlugin")}</a></li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.GPTs")}</a></li>
+                                        <li><a href='/gpts' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.GPTs")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.DevelopmentAI")}</a></li>
                                     </ul>
                                 </AccordionContent>

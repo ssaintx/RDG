@@ -8,14 +8,14 @@ export const Commissions = () => {
     return (
         <section className="commissions pt-8">
             {/* CONTAINER */}
-            <div className="flex flex-col gap-6 w-full container-padding container-padding-2">
+            <div className="flex flex-col gap-8 w-full container-padding container-padding-2 lg:py-16">
                 {/* TEXT CONTAINER */}
-                <div className="flex flex-col gap-6 min-w-[300px] w-full max-w-[600px]">
+                <div className="flex flex-col gap-8 min-w-[300px] w-full max-w-[600px]">
                     <h1 className="text-black title-text">{t("Title")}</h1>
                     <h2 className="text-textTertiary text-sm sm:text-md">{t("Subtitle")}</h2>
                 </div>
                 {/* BUTTON CONTAINER */}
-                <div className="flex flex-row gap-4 sm:gap-8">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 mt-4">
                         <Button className="btn-blue !px-4 sm:!px-8">
                         {t("InviteClient")}
                         <ArrowRightIcon />

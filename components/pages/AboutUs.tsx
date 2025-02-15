@@ -16,7 +16,7 @@ export const AboutUs = () => {
 
             {/* HERO TEXT CONTAINER */}
             <div className="flex flex-col items-start justify-center container-padding container-padding-2 my-20 gap-4 w-full">
-                <h1 className="text-white font-bold text-5xl lg:text-7xl"><span className="text-[#AEB3D3] pr-1">#</span>{t("Title")}</h1>
+                <h1 className="text-white font-bold text-3xl sm:text-5xl lg:text-7xl"><span className="text-[#AEB3D3] pr-1">#</span>{t("Title")}</h1>
                 <p className="text-white font-bold text-xl md:text-2xl lg:text-3xl">{t("Subtitle")}</p>
             </div>
 

@@ -36,7 +36,7 @@ export const ConnectGPT = () => {
         ))}
       </div>
       {/* BUTTON CONTAINER*/}
-      <div className="flex items-center justify-center w-full container-padding my-12">
+      <div className="flex items-center justify-center w-full container-padding my-12 pb-6">
         <Button className="btn-blue">
           {t("Button")}
           <ArrowRightIcon />

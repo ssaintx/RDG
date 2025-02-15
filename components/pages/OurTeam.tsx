@@ -8,7 +8,9 @@ export const OurTeam = () => {
 
     return (
         <section className="our-team">
-            <Team dark />
+            <div className="mt-16 lg:mt-0">
+                <Team dark />
+            </div>
             <div className="flex flex-col items-center container-padding mt-8 pb-16">
                 <div className="w-full">
                     {/* Question Bubble */}

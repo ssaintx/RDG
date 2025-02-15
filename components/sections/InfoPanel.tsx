@@ -7,7 +7,7 @@ export const InfoPanel = () => {
     return (
         <section className="info-panel">
             {/* CARDS CONTAINER */}
-            <div className="card-container container-padding container-padding-2">
+            <div className="card-container container-padding container-padding-2 lg:py-12 lg:gap-12">
                 {/* CARDS */}
                 {infoPanelItems().slice(0, 5).map((item, i) => (
                     <div
@@ -17,7 +17,7 @@ export const InfoPanel = () => {
                         {/* CARDS ICON */}
                         <Image src={item.icon} alt={item.title} width={40} height={40} />
                         {/* CARDS TITLE */}
-                        <h1 className="mt-4">{item.title}</h1>
+                        <h1 className="mt-4 font-bold text-xl">{item.title}</h1>
                         {/* CARDS DESCRIPTION*/}
                         <p className="mt-6 text-textLight" dangerouslySetInnerHTML={{ __html: item.description }} />
                         {/* CARDS LINK */}

@@ -485,3 +485,10 @@ export const gptsItems = () => {
 
     return items;
 }
+
+// PATHNAMES
+export const pathnames = [
+    '/about-us',
+    '/our-team',
+    '/gpts'
+]
