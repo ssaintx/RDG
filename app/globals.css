@@ -120,23 +120,23 @@ body {
   }
 
   .btn-blur {
-    @apply !bg-backgroundPrimary/5 !backdrop-filter !backdrop-blur-xl border !border-[#AEB3D3] !text-white !rounded-full !px-8 !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !bg-backgroundPrimary/5 !backdrop-filter !backdrop-blur-xl border !border-[#AEB3D3] !text-white !rounded-full !px-8;
   }
 
   .btn-transparent {
-    @apply !bg-transparent !text-textTertiary inset-0 !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !bg-transparent !text-textTertiary inset-0;
   }
 
   .btn-dark {
-    @apply !rounded-full !px-8 !bg-[#393939] !border-none !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !rounded-full !px-8 !bg-[#393939] !border-none !text-white;
   }
 
   .btn-blue {
-    @apply !rounded-full !px-8 !bg-main !border-none !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !rounded-full !px-8 !bg-main !border-none !text-white;
   }
 
   .btn-full {
-    @apply !rounded-full !border-[2px] !border-[#808099] !bg-transparent !text-white !transition !duration-200 !ease-in-out hover:!-translate-y-1;
+    @apply !rounded-full !border-[2px] !border-[#808099] !bg-transparent !text-white;
   }
 }
 
@@ -171,7 +171,7 @@ body {
   }
 
   .card {
-    @apply flex flex-col h-full p-6 bg-backgroundSecondary rounded-3xl;
+    @apply flex flex-col h-full p-6 bg-backgroundSecondary rounded-[30px];
   }
 
   .title-text {

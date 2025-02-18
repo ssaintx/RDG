@@ -36,7 +36,7 @@ export const NavMenu = () => {
                         pathname === '/about-us' || pathname === '/our-team' ? 'text-white' : ''
                     )}
                     >
-                        {t("About.Title")}
+                        <a href="/">{t("About.Title")}</a>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="nav-menu">
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -78,7 +78,7 @@ export const NavMenu = () => {
                     <NavigationMenuContent className="nav-menu">
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                             {partnersItems().map((item) => (
-                                <a href={item.href} target="_blank" rel="noopener noreferrer" className="card gap-2 " key={item.id}>
+                                <a href={item.href} target="_blank" rel="noopener noreferrer" className="card !p-4 !rounded-2xl gap-2 " key={item.id}>
                                     <Image src={item.image} alt={item.title} width={300} height={200} className="rounded-lg" />
                                     <h1 className="text-lg">{item.title}</h1>
                                     <p className="text-sm text-textLight">{item.description}</p>
@@ -94,9 +94,9 @@ export const NavMenu = () => {
                         <ul className="flex items-start justify-between w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                             <div className="flex flex-col gap-2 mt-4">
                                 <ListItem href='' target="_blank" rel="noopener noreferrer" title={t("Contacts.Order")} />
-                                <ListItem href='' target="_blank" rel="noopener noreferrer" title={t("Contacts.Support")} />
+                                <ListItem href='https://t.me/puzzledevs' target="_blank" rel="noopener noreferrer" title={t("Contacts.Support")} />
                             </div>
-                            <a href='' target="_blank" rel="noopener noreferrer" className="card gap-2 ">
+                            <a href='' target="_blank" rel="noopener noreferrer" className="card !p-4 !rounded-2xl gap-2 ">
                                 <Image src='/images/contacts/first-card.png' alt="news" width={200} height={200} className="rounded-lg" />
                                 <h1 className="text-lg">{t("Contacts.NewsChannel.Title")}</h1>
                                 <p className="text-sm text-textLight">{t("Contacts.NewsChannel.Description")}</p>

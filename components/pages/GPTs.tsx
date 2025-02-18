@@ -70,7 +70,7 @@ export const GPTs = () => {
                     {gptsItems().map((item, i) => (
                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
                         {/* CARDS IMAGE */}
-                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-xl" />
+                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
                         {/* CARDS TITLE */}
                         <h1 className="text-xl font-bold">{item.title}</h1>
                         {/* CARDS PARAGRAPH */}
@@ -101,7 +101,7 @@ export const GPTs = () => {
                     {gptsItems().map((item, i) => (
                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
                         {/* CARDS IMAGE */}
-                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-xl" />
+                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
                         {/* CARDS TITLE */}
                         <h1 className="text-xl font-bold">{item.title}</h1>
                         {/* CARDS PARAGRAPH */}
@@ -132,7 +132,7 @@ export const GPTs = () => {
                     {gptsItems().map((item, i) => (
                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
                         {/* CARDS IMAGE */}
-                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-xl" />
+                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
                         {/* CARDS TITLE */}
                         <h1 className="text-xl font-bold">{item.title}</h1>
                         {/* CARDS PARAGRAPH */}
@@ -163,7 +163,7 @@ export const GPTs = () => {
                     {gptsItems().map((item, i) => (
                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
                         {/* CARDS IMAGE */}
-                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-xl" />
+                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
                         {/* CARDS TITLE */}
                         <h1 className="text-xl font-bold">{item.title}</h1>
                         {/* CARDS PARAGRAPH */}

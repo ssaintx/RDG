@@ -30,13 +30,13 @@ export const Team = ({ dark }: { dark?: boolean}) => {
                                 {/* Static Text (Always Visible) */}
                                 <div className="absolute bottom-0 transition-all duration-300 -translate-y-6 group-hover:-translate-y-48">
                                     <h1 className="text-white font-bold text-lg">{item.name}</h1>
-                                    <h2 className="text-[#D9D9D9] text-sm">{item.role}</h2>
+                                    <h2 className="mt-1 text-[#D9D9D9] text-sm">{item.role}</h2>
                                 </div>
 
                                 {/* Hover Effect: Additional Information */}
                                 <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-                                    <p className="text-[#D9D9D9] mt-2 text-sm">{item.about || ""}</p>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-row gap-2 text-[#D9D9D9] font-medium mt-2">
+                                    <p className="mb-10 text-[#D9D9D9] text-sm">{item.about || ""}</p>
+                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-row gap-2 my-2 text-[#D9D9D9] hover">
                                         {item.portfolio}
                                         <ArrowRightIcon className="-rotate-45 size-6" />
                                     </a>

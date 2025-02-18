@@ -13,17 +13,17 @@ export const AboutProduct = () => {
         {aboutProductItems().slice(0, 5).map((item, i) => (
           <div
             key={item.id}
-            className={`card ${i === 0 ? 'col-span-1 md:col-span-2' : ''} ${i === 1 ? 'lg:col-span-1' : ''}`}
+            className={`card !px-8 !py-10 ${i === 0 ? 'col-span-1 md:col-span-2' : ''} ${i === 1 ? 'lg:col-span-1' : ''}`}
           >
             {/* CARDS ICON */}
             <Image src={item.icon} alt={item.title} width={40} height={40} />
             {/* CARDS TITLE */}
-            <h1 className="mt-4 font-bold text-xl">{item.title}</h1>
+            <h1 className="mt-6 font-bold text-xl">{item.title}</h1>
             {/* CARDS DESCRIPTION*/}
             <p className="mt-6 text-textLight">{item.description}</p>
             {/* CARDS LINK */}
-            <div className="flex h-full items-end">
-              <a href={item.link} className="flex flex-row gap-2 my-8 text-textLight hover">
+            <div className="flex flex-col h-full justify-end">
+              <a href={item.link} className="flex flex-row gap-2 mt-20 text-textLight hover">
                 {item.url}
                 {item.url !== '' ? <ArrowRightIcon className="-rotate-45 size-6" /> : null}
               </a>
@@ -40,17 +40,17 @@ export const AboutProduct = () => {
           {aboutProductItems().slice(0, 3).map((item, i) => (
             <div
               key={item.id}
-              className="card"
+              className="card !px-8 !py-10"
             >
               {/* CARDS ICON */}
               <Image src={item.icon} alt={item.title} width={40} height={40} />
               {/* CARDS TITLE */}
-              <h1 className="mt-4 font-bold text-xl">{item.title}</h1>
+              <h1 className="mt-6 font-bold text-xl">{item.title}</h1>
               {/* CARDS DESCRIPTION*/}
               <p className="mt-6 text-textLight">{item.description}</p>
               {/* CARDS LINK */}
-              <div className="flex h-full items-end">
-                <a href={item.link} className="flex flex-row gap-2 my-8 text-textLight hover">
+              <div className="flex flex-col h-full justify-end">
+                <a href={item.link} className="flex flex-row gap-2 mt-20 text-textLight hover">
                   {item.url}
                   {item.url !== '' ? <ArrowRightIcon className="-rotate-45 size-6" /> : null}
                 </a>
@@ -64,17 +64,17 @@ export const AboutProduct = () => {
           {aboutProductItems().slice(3, 5).map((item, i) => (
             <div
               key={item.id}
-              className="card"
+              className="card !px-8 !py-10"
             >
               {/* CARDS ICON */}
               <Image src={item.icon} alt={item.title} width={40} height={40} />
               {/* CARDS TITLE */}
-              <h1 className="mt-4 font-bold text-xl">{item.title}</h1>
+              <h1 className="mt-6 font-bold text-xl">{item.title}</h1>
               {/* CARDS DESCRIPTION*/}
               <p className="mt-6 text-textLight">{item.description}</p>
               {/* CARDS LINK */}
-              <div className="flex h-full items-end">
-                <a href={item.link} className="flex flex-row gap-2 my-8 text-textLight hover">
+              <div className="flex flex-col h-full justify-end">
+                <a href={item.link} className="flex flex-row gap-2 my-6 text-textLight hover">
                   {item.url}
                   {item.url !== '' ? <ArrowRightIcon className="-rotate-45 size-6" /> : null}
                 </a>

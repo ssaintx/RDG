@@ -60,7 +60,7 @@ export const Menu = () => {
                                     <ul className="space-y-2 text-white text-sm font-[200]">
                                         <li><a href='/about-us' className="hover">{t("About.AboutUs")}</a></li>
                                         <li><a href='/our-team' className="hover">{t("About.OurTeam")}</a></li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DevelopmentLessons")}</a></li>
+                                        <li><a href='https://t.me/rdglessons' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DevelopmentLessons")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.DataPolicy")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("About.PrivacyPolicy")}</a></li>
                                     </ul>
@@ -102,7 +102,7 @@ export const Menu = () => {
                                     <ul className="flex flex-col space-y-2 text-white text-sm">
                                         <div className="flex flex-col gap-2 mt-4 font-[200]">
                                             <a href='' target="_blank" rel="noopener noreferrer">{t("Contacts.Order")}</a>
-                                            <a href='' target="_blank" rel="noopener noreferrer">{t("Contacts.Support")}</a>
+                                            <a href='https://t.me/puzzledevs' target="_blank" rel="noopener noreferrer">{t("Contacts.Support")}</a>
                                         </div>
                                         <a href='' target="_blank" rel="noopener noreferrer" className="card gap-2 !p-2 !w-max !rounded-xl">
                                             <Image src='/images/contacts/first-card.png' alt="news" width={200} height={100} className="rounded-lg" />

@@ -15,7 +15,9 @@ export const Navbar = () => {
     return (
         <nav className="navbar">
             {/* LOGO */}
-            <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="select-none" />
+            <a href="/">
+                <Image src="/images/logo.svg" alt="logo" width={72} height={72} priority className="select-none" />
+            </a>
 
             {/* DESKTOP VIEW */}
             <div

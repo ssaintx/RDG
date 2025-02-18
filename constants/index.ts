@@ -15,7 +15,7 @@ export const aboutItems = () => {
         },
         {
             title: t("DevelopmentLessons"),
-            href: "",
+            href: "https://t.me/rdglessons",
         },
         {
             title: t("DataPolicy"),
@@ -80,7 +80,7 @@ export const partnersItems = () => {
             image: '/images/partners/first-card.png',
             title: t("FirstPartner.Title"),
             description: t("FirstPartner.Description"),
-            href: '',
+            href: 'https://pxsto.re/',
         },
     ]
 
