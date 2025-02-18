@@ -44,7 +44,7 @@ export const productsItems = () => {
         },
         {
             title: t("AI"),
-            href: "",
+            href: "https://t.me/ChatGPT_PuzzleBot",
         },
         {
             title: t("UsingAI"),
@@ -56,7 +56,7 @@ export const productsItems = () => {
         },
         {
             title: t("ConnectionPlugin"),
-            href: "",
+            href: "https://t.me/ChatGPT_PuzzleBot",
         },
         {
             title: t("GPTs"),
@@ -429,6 +429,7 @@ export const aboutUsMessages = () => {
     return messages;
 };
 
+// Gpts items
 export const gptsItems = () => {
     const t = useTranslations("Gpts.Cards");
 
@@ -440,6 +441,7 @@ export const gptsItems = () => {
             description: t('FirstCard.Description'),
             button: t('FirstCard.ConnectButton'),
             link: '',
+            category: 'image'
         },
         {
             id: 2,
@@ -448,6 +450,7 @@ export const gptsItems = () => {
             description: t('SecondCard.Description'),
             button: t('SecondCard.ConnectButton'),
             link: '',
+            category: 'compilation by text'
         },
         {
             id: 3,
@@ -456,6 +459,7 @@ export const gptsItems = () => {
             description: t('ThirdCard.Description'),
             button: t('ThirdCard.ConnectButton'),
             link: '',
+            category: 'performance'
         },
         {
             id: 4,
@@ -464,6 +468,7 @@ export const gptsItems = () => {
             description: t('FourthCard.Description'),
             button: t('FourthCard.ConnectButton'),
             link: '',
+            category: 'research and analysis'
         },
         {
             id: 5,
@@ -472,6 +477,7 @@ export const gptsItems = () => {
             description: t('FifthCard.Description'),
             button: t('FifthCard.ConnectButton'),
             link: '',
+            category: 'education'
         },
         {
             id: 6,
@@ -480,6 +486,7 @@ export const gptsItems = () => {
             description: t('SixthCard.Description'),
             button: t('SixthCard.ConnectButton'),
             link: '',
+            category: 'lifestyle'
         },
     ];
 
