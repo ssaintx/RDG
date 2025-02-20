@@ -5,7 +5,10 @@ import { ArrowDownIcon } from '@radix-ui/react-icons';
 
 export const InfoPanel = () => {
     return (
-        <section className="info-panel">
+        <section
+            className="info-panel"
+            id="info-panel"
+        >
             {/* CARDS CONTAINER */}
             <div className="card-container container-padding container-padding-2 lg:py-12 lg:gap-12">
                 {/* CARDS */}

@@ -48,7 +48,7 @@ export const productsItems = () => {
         },
         {
             title: t("UsingAI"),
-            href: "",
+            href: "/#connect-gpt",
         },
         {
             title: t("BotDevelopment"),
@@ -98,7 +98,7 @@ export const aboutProductItems = () => {
             title: t('FirstCard.Title'),
             description: t('FirstCard.Description'),
             url: t('FirstCard.Url'),
-            link: '',
+            link: 'https://bot.pxsto.re',
         },
         {
             id: 2,
@@ -106,7 +106,7 @@ export const aboutProductItems = () => {
             title: t('SecondCard.Title'),
             description: t('SecondCard.Description'),
             url: t('SecondCard.Url'),
-            link: '',
+            link: '/our-team',
         },
         {
             id: 3,
@@ -148,7 +148,7 @@ export const infoPanelItems = () => {
             title: t('FirstCard.Title'),
             description: t('FirstCard.Description'),
             url: t('FirstCard.Url'),
-            link: '',
+            link: '#connect-gpt',
         },
         {
             id: 2,
@@ -190,7 +190,7 @@ export const connectGPTItems = () => {
             title: t('FirstCard.Title'),
             description: t('FirstCard.Description'),
             button: t('FirstCard.ConnectButton'),
-            link: '',
+            link: 'https://t.me/ChatGPT_PuzzleBot',
         },
         {
             id: 2,
@@ -198,7 +198,7 @@ export const connectGPTItems = () => {
             title: t('SecondCard.Title'),
             description: t('SecondCard.Description'),
             button: t('SecondCard.ConnectButton'),
-            link: '',
+            link: 'https://t.me/ChatGPT_PuzzleBot',
         },
         {
             id: 3,
@@ -206,7 +206,7 @@ export const connectGPTItems = () => {
             title: t('ThirdCard.Title'),
             description: t('ThirdCard.Description'),
             button: t('ThirdCard.ConnectButton'),
-            link: '',
+            link: 'https://t.me/ChatGPT_PuzzleBot',
         },
     ];
 
@@ -273,7 +273,7 @@ export const teamItems = () => {
             name: t('SecondCard.Name'),
             role: t('SecondCard.Role'),
             about: t('SecondCard.About'),
-            portfolio: t('FirstCard.Portfolio'),
+            portfolio: '',
             url: '',
         },
         {
@@ -282,7 +282,7 @@ export const teamItems = () => {
             name: t('ThirdCard.Name'),
             role: t('ThirdCard.Role'),
             about: t('ThirdCard.About'),
-            portfolio: t('ThirdCard.Portfolio'),
+            portfolio: '',
             url: '',
         },
         {
@@ -291,7 +291,7 @@ export const teamItems = () => {
             name: t('FourthCard.Name'),
             role: t('FourthCard.Role'),
             about: t('FourthCard.About'),
-            portfolio: t('FourthCard.Portfolio'),
+            portfolio: '',
             url: '',
         },
         {
@@ -300,7 +300,7 @@ export const teamItems = () => {
             name: t('FifthCard.Name'),
             role: t('FifthCard.Role'),
             about: t('FifthCard.About'),
-            portfolio: t('FifthCard.Portfolio'),
+            portfolio: '',
             url: '',
         },
         {
@@ -309,7 +309,7 @@ export const teamItems = () => {
             name: t('SixthCard.Name'),
             role: t('SixthCard.Role'),
             about: t('SixthCard.About'),
-            portfolio: t('SixthCard.Portfolio'),
+            portfolio: '',
             url: '',
         },
         {
@@ -318,7 +318,7 @@ export const teamItems = () => {
             name: t('SeventhCard.Name'),
             role: t('SeventhCard.Role'),
             about: t('SeventhCard.About'),
-            portfolio: t('SeventhCard.Portfolio'),
+            portfolio: '',
             url: '',
         },
     ];

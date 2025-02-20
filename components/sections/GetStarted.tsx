@@ -6,7 +6,10 @@ export const GetStarted = () => {
     const t = useTranslations("GetStarted");
 
     return (
-        <section className="get-started">
+        <section
+            className="get-started"
+            id="get-started"
+        >
             {/* CONTAINER */}
             <div className="flex flex-col items-center w-full container-padding my-8">
                 {/* CARD */}
@@ -15,14 +18,18 @@ export const GetStarted = () => {
                     <h2 className="text-center text-textSecondary text-lg">{t("Subtitle")}</h2>
                     {/* BUTTONS CONTAINER */}
                     <div className="flex flex-row gap-6 mt-4">
-                        <Button className="btn-blue">
-                            {t("OrderBot")}
-                            <ArrowRightIcon className="size-6" />
-                        </Button>
-                        <Button className="btn-transparent text-textTertiary">
-                            {t("About")}
-                            <ArrowRightIcon className="-rotate-45 size-8" />
-                        </Button>
+                        <a href="https://t.me/ChatGPT_PuzzleBot">
+                            <Button className="btn-blue">
+                                {t("OrderBot")}
+                                <ArrowRightIcon className="size-6" />
+                            </Button>
+                        </a>
+                        <a href="/about-team">
+                            <Button className="btn-transparent text-textTertiary">
+                                {t("About")}
+                                <ArrowRightIcon className="-rotate-45 size-8" />
+                            </Button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,10 @@ export const Commissions = () => {
     const t = useTranslations("Commissions");
 
     return (
-        <section className="commissions pt-8">
+        <section
+            className="commissions pt-8"
+            id="commissions"
+        >
             {/* CONTAINER */}
             <div className="flex flex-col gap-8 w-full container-padding container-padding-2 lg:py-16">
                 {/* TEXT CONTAINER */}
@@ -16,14 +19,18 @@ export const Commissions = () => {
                 </div>
                 {/* BUTTON CONTAINER */}
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 mt-4">
+                    <a href="https://t.me/ChatGPT_PuzzleBot?start=ref">
                         <Button className="btn-blue !px-4 sm:!px-8">
-                        {t("InviteClient")}
-                        <ArrowRightIcon />
-                    </Button>
-                    <Button className="btn-transparent !px-4 sm:!px-8">
-                        {t("LearnMore")}
-                        <ArrowRightIcon className="-rotate-45 size-6" />
-                    </Button>
+                            {t("InviteClient")}
+                            <ArrowRightIcon />
+                        </Button>
+                    </a>
+                    <a href="https://t.me/ChatGPT_PuzzleBot?start=ref">
+                        <Button className="btn-transparent !px-4 sm:!px-8">
+                            {t("LearnMore")}
+                            <ArrowRightIcon className="-rotate-45 size-6" />
+                        </Button>
+                    </a>
                 </div>
             </div>
         </section>

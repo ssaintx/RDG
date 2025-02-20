@@ -98,11 +98,15 @@ export const GPTs = () => {
                             <ScrollBar orientation="horizontal" className="bg-transparent" />
                         </ScrollArea>
 
-                        {/* ALL TAB CONTENT */}
+                        {/* ALL CATEGORY */}
                         <TabsContent value={tabs[0]}>
+
+                            {/* FEATURED */}
                             <div className="flex flex-row w-full justify-start items-center mt-8">
                                 <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.FirstTitle")}</h1>
                             </div>
+
+                            {/* CARDS CONTAINER */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
                                 {filteredItems.map((item, i) => (
                                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
@@ -127,9 +131,12 @@ export const GPTs = () => {
                                 {t("SeeMore")}
                             </Button>
 
+                            {/* FROM PUZZLE AI */}
                             <div className="flex flex-row w-full justify-start items-center mt-16">
                                 <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.SecondTitle")}</h1>
                             </div>
+
+                            {/* CARDS CONTAINER */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
                                 {filteredItems.map((item, i) => (
                                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
@@ -149,13 +156,17 @@ export const GPTs = () => {
                                     </div>
                                 ))}
                             </div>
+
                             <Button className="btn-full w-full mt-6">
                                 {t("SeeMore")}
                             </Button>
 
+                            {/* IMAGES */}
                             <div className="flex flex-row w-full justify-start items-center mt-16">
                                 <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.ThirdTitle")}</h1>
                             </div>
+
+                            {/* CARDS CONTAINER */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
                                 {filteredItems.map((item, i) => (
                                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
@@ -175,13 +186,16 @@ export const GPTs = () => {
                                     </div>
                                 ))}
                             </div>
+
                             <Button className="btn-full w-full mt-6">
                                 {t("SeeMore")}
                             </Button>
 
+                            {/* COMPILATION BY TEXT */}
                             <div className="flex flex-row w-full justify-start items-center mt-16">
                                 <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.FourthTitle")}</h1>
                             </div>
+                            {/* CARDS CONTAINER */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
                                 {filteredItems.map((item, i) => (
                                     <div className="card flex flex-row gap-4 justify-center" key={item.id}>
@@ -201,15 +215,157 @@ export const GPTs = () => {
                                     </div>
                                 ))}
                             </div>
+
                             <Button className="btn-full w-full mt-6">
                                 {t("SeeMore")}
                             </Button>
                         </TabsContent>
 
+                        {/* IMAGE CATEGORY */}
                         <TabsContent value={tabs[1]}>
-                            {categories.map((category, i) => (
+                            {categories.slice(0, 1).map((category, i) => (
                                 <div key={i}>
-                                    <h1 className="font-bold text-2xl md:text-3xl">{category[0].toUpperCase() + category.substr(1).toLowerCase()}</h1>
+                                    <h1 className="font-bold text-2xl md:text-3xl mt-8">{tabs[1]}</h1>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                        {filteredItems.filter((item) => item.category === category).map((item, i) => (
+                                            <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                                {/* CARDS IMAGE */}
+                                                <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                                {/* CARDS TITLE */}
+                                                <h1 className="text-xl font-bold">{item.title}</h1>
+                                                {/* CARDS PARAGRAPH */}
+                                                <p className="text-textLight">{item.description}</p>
+                                                {/* CARDS BUTTON */}
+                                                <div className="flex items-center justify-end">
+                                                    <Button className="btn-dark">
+                                                        <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                        {item.button}
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </TabsContent>
+
+                        {/* COMPILATION BY TEXT CATEGORY */}
+                        <TabsContent value={tabs[2]}>
+                            {categories.slice(1, 2).map((category, i) => (
+                                <div key={i}>
+                                    <h1 className="font-bold text-2xl md:text-3xl mt-8">{tabs[2]}</h1>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                        {filteredItems.filter((item) => item.category === category).map((item, i) => (
+                                            <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                                {/* CARDS IMAGE */}
+                                                <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                                {/* CARDS TITLE */}
+                                                <h1 className="text-xl font-bold">{item.title}</h1>
+                                                {/* CARDS PARAGRAPH */}
+                                                <p className="text-textLight">{item.description}</p>
+                                                {/* CARDS BUTTON */}
+                                                <div className="flex items-center justify-end">
+                                                    <Button className="btn-dark">
+                                                        <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                        {item.button}
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </TabsContent>
+
+                        {/* PERFORMANCE CATEGORY */}
+                        <TabsContent value={tabs[3]}>
+                            {categories.slice(2, 3).map((category, i) => (
+                                <div key={i}>
+                                    <h1 className="font-bold text-2xl md:text-3xl mt-8">{tabs[3]}</h1>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                        {filteredItems.filter((item) => item.category === category).map((item, i) => (
+                                            <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                                {/* CARDS IMAGE */}
+                                                <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                                {/* CARDS TITLE */}
+                                                <h1 className="text-xl font-bold">{item.title}</h1>
+                                                {/* CARDS PARAGRAPH */}
+                                                <p className="text-textLight">{item.description}</p>
+                                                {/* CARDS BUTTON */}
+                                                <div className="flex items-center justify-end">
+                                                    <Button className="btn-dark">
+                                                        <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                        {item.button}
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </TabsContent>
+
+                        {/* RESEARCH AND ANALYSIS CATEGORY */}
+                        <TabsContent value={tabs[4]}>
+                            {categories.slice(3, 4).map((category, i) => (
+                                <div key={i}>
+                                    <h1 className="font-bold text-2xl md:text-3xl mt-8">{tabs[4]}</h1>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                        {filteredItems.filter((item) => item.category === category).map((item, i) => (
+                                            <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                                {/* CARDS IMAGE */}
+                                                <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                                {/* CARDS TITLE */}
+                                                <h1 className="text-xl font-bold">{item.title}</h1>
+                                                {/* CARDS PARAGRAPH */}
+                                                <p className="text-textLight">{item.description}</p>
+                                                {/* CARDS BUTTON */}
+                                                <div className="flex items-center justify-end">
+                                                    <Button className="btn-dark">
+                                                        <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                        {item.button}
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </TabsContent>
+
+                        {/* EDUCATION CATEGORY */}
+                        <TabsContent value={tabs[5]}>
+                            {categories.slice(4, 5).map((category, i) => (
+                                <div key={i}>
+                                    <h1 className="font-bold text-2xl md:text-3xl mt-8">{tabs[5]}</h1>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                        {filteredItems.filter((item) => item.category === category).map((item, i) => (
+                                            <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                                {/* CARDS IMAGE */}
+                                                <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                                {/* CARDS TITLE */}
+                                                <h1 className="text-xl font-bold">{item.title}</h1>
+                                                {/* CARDS PARAGRAPH */}
+                                                <p className="text-textLight">{item.description}</p>
+                                                {/* CARDS BUTTON */}
+                                                <div className="flex items-center justify-end">
+                                                    <Button className="btn-dark">
+                                                        <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                        {item.button}
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </TabsContent>
+
+                        {/* LIFESTYLE CATEGORY */}
+                        <TabsContent value={tabs[6]}>
+                            {categories.slice(5, 6).map((category, i) => (
+                                <div key={i}>
+                                    <h1 className="font-bold text-2xl md:text-3xl mt-8">{tabs[6]}</h1>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
                                         {filteredItems.filter((item) => item.category === category).map((item, i) => (
                                             <div className="card flex flex-row gap-4 justify-center" key={item.id}>

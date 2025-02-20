@@ -6,7 +6,10 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export const AboutProduct = () => {
   return (
-    <section className="about-product">
+    <section
+      className="about-product"
+      id="about-product"
+    >
       {/* CARDS CONTAINER */}
       <div className="lg:hidden card-container container-padding pt-6 md:pt-10 lg:pt-24 pb-6 md:pb-8 lg:pb-12">
         {/* CARDS */}

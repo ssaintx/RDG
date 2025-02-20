@@ -9,7 +9,10 @@ export const ConnectGPT = () => {
   const t = useTranslations("ConnectGPT");
 
   return (
-    <section className="connect-gpt">
+    <section
+      className="connect-gpt"
+      id="connect-gpt"
+    >
       {/* TITLE AND SUBTITLE CONTAINER */}
       <div className="flex flex-col justify-center gap-4 items-center w-full container-padding">
         <h1 className="title-text">{t("Title")}</h1>
@@ -27,20 +30,24 @@ export const ConnectGPT = () => {
             <p className="text-textLight">{item.description}</p>
             {/* CARDS BUTTON */}
             <div className="flex items-center justify-end">
-              <Button className="btn-dark">
-                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
-                {item.button}
-              </Button>
+              <a href={item.link}>
+                <Button className="btn-dark">
+                  <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                  {item.button}
+                </Button>
+              </a>
             </div>
           </div>
         ))}
       </div>
       {/* BUTTON CONTAINER*/}
       <div className="flex items-center justify-center w-full container-padding my-12 pb-6">
-        <Button className="btn-blue">
-          {t("Button")}
-          <ArrowRightIcon />
-        </Button>
+        <a href="/gpts">
+          <Button className="btn-blue">
+            {t("Button")}
+            <ArrowRightIcon />
+          </Button>
+        </a>
       </div>
     </section>
   );

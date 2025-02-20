@@ -25,6 +25,24 @@ export const Menu = () => {
     const t = useTranslations("Navbar")
     const [isOpen, setIsOpen] = useState(false);
 
+    // framer motion animation
+    const variants = {
+        open: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                y: { stiffness: 1000, velocity: -100 }
+            }
+        },
+        closed: {
+            y: 500,
+            opacity: 0,
+            transition: {
+                y: { stiffness: 1000 }
+            }
+        }
+    };
+
     return (
         // Mobile menu done by scratch 
         <div className="relative">
@@ -40,19 +58,15 @@ export const Menu = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ height: "10vh" }}
-                        animate={{ height: "100vh" }}
-                        exit={{ height: "10vh" }}
-                        transition={{
-                            duration: 0.5,
-                            ease: [0, 0.71, 0.2, 1.01],
-                        }}
-                        className="fixed top-0 left-0 w-full h-full bg-[#282828] backdrop-blur-3xl text-white z-40 flex flex-col p-6 overflow-y-auto">
+                        variants={variants}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="absolute top-0 left-0 w-full h-full bg-[#282828] backdrop-blur-3xl text-white z-40 flex flex-col p-6 overflow-y-auto">
                         {/* close trigger button when opened */}
                         <button
                             onClick={() => setIsOpen(false)}
                             aria-label="Close menu"
-                            className="self-end text-xl focus:outline-none mb-4">
+                            className="self-end text-xl focus:outline-none mb-4 z-50">
                             <Cross2Icon />
                         </button>
                         {/* content of the menu */}
@@ -77,18 +91,18 @@ export const Menu = () => {
                                     <ul className="space-y-2 text-white text-sm font-[200]">
                                         {/* SEPARATOR TEXT */}
                                         <li className="text-textTertiary my-1 font-light">{t("Products.Title")}</li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.TelegramBot")}</a></li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.Website")}</a></li>
+                                        <li><a href='https://t.me/ChatGPT_PuzzleBot' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.TelegramBot")}</a></li>
+                                        <li><a href='https://t.me/ChatGPT_PuzzleBot' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.Website")}</a></li>
                                         <li><a href='https://t.me/ChatGPT_PuzzleBot' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.AI")}</a></li>
                                         {/* SEPARATOR TEXT */}
                                         <li className="text-textTertiary my-1 font-light">{t("Products.Solutions")}</li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.UsingAI")}</a></li>
+                                        <li><a href='/#connect-gpt' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.UsingAI")}</a></li>
                                         <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.BotDevelopment")}</a></li>
                                         {/* SEPARATOR TEXT */}
                                         <li className="text-textTertiary my-1 font-light">{t("Products.AI2")}</li>
                                         <li><a href='https://t.me/ChatGPT_PuzzleBot' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.ConnectionPlugin")}</a></li>
                                         <li><a href='/gpts' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.GPTs")}</a></li>
-                                        <li><a href='' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.DevelopmentAI")}</a></li>
+                                        <li><a href='https://t.me/ChatGPT_PuzzleBot' target="_blank" rel="noopener noreferrer" className="hover">{t("Products.DevelopmentAI")}</a></li>
                                     </ul>
                                 </AccordionContent>
                             </AccordionItem>

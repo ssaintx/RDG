@@ -10,9 +10,12 @@ import {
 export const Hero = () => {
     const t = useTranslations("Hero");
     return (
-        <section className="hero" id="home">
+        <section
+            className="hero"
+            id="home"
+        >
             {/* HERO CONTAINER  */}
-            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-8 md:gap-16 mt-28 md:mt-0 pb-28 md:pb-0">
+            <div className="flex flex-col items-start justify-center container-padding w-full h-full gap-8 md:gap-16 mt-28 md:mt-0 pb-28 md:pb-0 ml-2 sm:ml-0">
                 {/* HERO HEADER TEXT CONTAINER */}
                 <div className="flex items-center justify-center">
                     <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold leading-tight">
@@ -36,10 +39,12 @@ export const Hero = () => {
                         {t("Buttons.Order")}
                         <ArrowRightIcon />
                     </Button>
-                    <Button className="btn-transparent justify-self-end -translate-x-8 md:-translate-x-0 translate-y-20 md:translate-y-0">
-                        {t("Buttons.Learn")}
-                        <ArrowDownIcon />
-                    </Button>
+                    <a href="#about-product">
+                        <Button className="btn-transparent justify-self-end -translate-x-8 md:-translate-x-0 translate-y-20 md:translate-y-0">
+                            {t("Buttons.Learn")}
+                            <ArrowDownIcon />
+                        </Button>
+                    </a>
                 </div>
             </div>
         </section>

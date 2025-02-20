@@ -4,11 +4,14 @@ import { teamItems } from "@/constants";
 import { useTranslations } from "next-intl";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-export const Team = ({ dark }: { dark?: boolean}) => {
+export const Team = ({ dark }: { dark?: boolean }) => {
     const t = useTranslations("Team");
 
     return (
-        <section className={`team ${dark ? 'bg-backgroundPrimary' : ''}`}>
+        <section
+            className={`team ${dark ? 'bg-backgroundPrimary' : ''}`}
+            id="team"
+        >
             {/* CONTAINER */}
             <div className="flex flex-col items-center w-full container-padding container-padding-2">
                 {/* TEXT CONTAINER */}
@@ -28,15 +31,23 @@ export const Team = ({ dark }: { dark?: boolean}) => {
                             {/* Text Content */}
                             <div className="absolute bottom-0 left-0 right-0 p-6 z-10 transition-all duration-300 flex flex-col">
                                 {/* Static Text (Always Visible) */}
-                                <div className="absolute bottom-0 transition-all duration-300 -translate-y-6 group-hover:-translate-y-48">
+                                <div className={`absolute bottom-0 transition-all duration-300 -translate-y-6 ${item.portfolio ? 'group-hover:-translate-y-48' : 'group-hover:-translate-y-28'}`}>
                                     <h1 className="text-white font-bold text-lg">{item.name}</h1>
                                     <h2 className="mt-1 text-[#D9D9D9] text-sm">{item.role}</h2>
                                 </div>
 
                                 {/* Hover Effect: Additional Information */}
-                                <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-                                    <p className="mb-10 text-[#D9D9D9] text-sm">{item.about || ""}</p>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-row gap-2 my-2 text-[#D9D9D9] hover">
+                                <div
+                                    className={`opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0`}
+                                >
+                                    <p className={`${item.portfolio ? 'mb-10' : 'mb-0'}  text-[#D9D9D9] text-sm`}>{item.about || ""}</p>
+                                    <a
+                                        href={item.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`flex flex-row gap-2 my-2 text-[#D9D9D9] hover 
+                                        ${item.portfolio ? 'block' : 'hidden'}`}
+                                    >
                                         {item.portfolio}
                                         <ArrowRightIcon className="-rotate-45 size-6" />
                                     </a>

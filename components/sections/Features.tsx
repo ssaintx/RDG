@@ -7,7 +7,10 @@ export const Features = () => {
     const t = useTranslations("Features");
 
     return (
-        <section className="features">
+        <section
+            className="features"
+            id="features"
+        >
             {/* CONTAINER */}
             <div className="flex flex-col items-center w-full container-padding container-padding-2 lg:py-12">
                 {/* TITLE */}

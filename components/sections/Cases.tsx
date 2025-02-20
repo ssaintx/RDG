@@ -7,7 +7,10 @@ export const Cases = () => {
     const t = useTranslations("Cases");
 
     return (
-        <section className="cases">
+        <section
+            className="cases"
+            id="cases"
+        >
             {/* CONTAINER */}
             <div className="flex flex-col items-center w-full container-padding container-padding-2">
                 {/* TEXT CONTAINER */}
@@ -44,14 +47,18 @@ export const Cases = () => {
                 </div>
                 {/* LINKS CONTAINER */}
                 <div className="flex flex-col items-center mt-8 gap-8 w-full container-padding">
-                    <h2 className="flex flex-row items-center gap-2 text-[#4C4C4C] hover cursor-pointer">
-                        {t("MoreCases")}
-                        <ArrowRightIcon className="-rotate-45 size-6" />
-                    </h2>
-                    <Button className="btn-blue">
-                        {t("OrderBot")}
-                        <ArrowRightIcon className="size-6" />
-                    </Button>
+                    <a href="https://bot.pxsto.re">
+                        <h2 className="flex flex-row items-center gap-2 text-[#4C4C4C] hover cursor-pointer">
+                            {t("MoreCases")}
+                            <ArrowRightIcon className="-rotate-45 size-6" />
+                        </h2>
+                    </a>
+                    <a href="https://t.me/ChatGPT_PuzzleBot">
+                        <Button className="btn-blue">
+                            {t("OrderBot")}
+                            <ArrowRightIcon className="size-6" />
+                        </Button>
+                    </a>
                 </div>
             </div>
         </section>
