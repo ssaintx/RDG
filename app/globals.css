@@ -18,7 +18,7 @@ body {
 
   /* Scrollbar Track */
   ::-webkit-scrollbar {
-    @apply w-1 h-1 rounded-full glassmorphism; /* Set height to 1px */
+    @apply w-1 h-0 rounded-full glassmorphism; /* Set height to 1px */
   }
 
   /* Scrollbar Thumb */

@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 import { Search } from "lucide-react";
+import { ScrollArea, ScrollBar } from "../ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import {
     Tabs,
@@ -17,10 +18,11 @@ import { useTranslations } from "next-intl";
 
 export const GPTs = () => {
     const t = useTranslations("Gpts");
+    // SEARCHING ALGORITHM
     const allGpts = gptsItems();
-    const [activeTab, setActiveTab] = useState("All");
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredItems, setFilteredItems] = useState(allGpts);
+
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const newSearchTerm = event.target.value;
         setSearchTerm(newSearchTerm);
@@ -44,6 +46,7 @@ export const GPTs = () => {
         setFilteredItems(filtered);
     };
 
+    // TABS
     const tabs = [
         t("Tabs.FirstTab"),
         t("Tabs.SecondTab"),
@@ -53,6 +56,9 @@ export const GPTs = () => {
         t("Tabs.SixthTab"),
         t("Tabs.SeventhTab"),
     ];
+
+    // CATEGORIES
+    const categories = [...new Set(allGpts.map((item) => item.category))];
 
     return (
         <section className="gpts">
@@ -81,123 +87,152 @@ export const GPTs = () => {
                 {searchTerm === "" ? (
                     <Tabs defaultValue={tabs[0]}>
                         {/* Navigation Bar */}
-                        <TabsList className="flex justify-center items-center mt-8 border-b-[2px] border-backgroundSecondary text-textTertiary overflow-x-auto w-full">
-                            <div className="flex items-center justify-center overflow-x-auto">
-                                <TabsTrigger value={tabs[0]}>{tabs[0]}</TabsTrigger>
-                                <TabsTrigger value={tabs[1]}>{tabs[1]}</TabsTrigger>
-                                <TabsTrigger value={tabs[2]}>{tabs[2]}</TabsTrigger>
-                                <TabsTrigger value={tabs[3]}>{tabs[3]}</TabsTrigger>
-                                <TabsTrigger value={tabs[4]}>{tabs[4]}</TabsTrigger>
-                                <TabsTrigger value={tabs[5]}>{tabs[5]}</TabsTrigger>
-                                <TabsTrigger value={tabs[6]}>{tabs[6]}</TabsTrigger>
+                        <ScrollArea>
+                            <div className="w-full relative h-10 mt-8 overflow-hidden">
+                                <TabsList className="absolute flex justify-start lg:justify-center items-center h-10 w-full border-b-[2px] border-backgroundSecondary pb-1.5">
+                                    {tabs.map((tab, i) => (
+                                        <TabsTrigger value={tab} key={i}>{tab}</TabsTrigger>
+                                    ))}
+                                </TabsList>
                             </div>
-                        </TabsList>
-                        <div className="flex flex-row w-full justify-start items-center mt-8">
-                            <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.FirstTitle")}</h1>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
-                            {filteredItems.map((item, i) => (
-                                <div className="card flex flex-row gap-4 justify-center" key={item.id}>
-                                    {/* CARDS IMAGE */}
-                                    <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
-                                    {/* CARDS TITLE */}
-                                    <h1 className="text-xl font-bold">{item.title}</h1>
-                                    {/* CARDS PARAGRAPH */}
-                                    <p className="text-textLight">{item.description}</p>
-                                    {/* CARDS BUTTON */}
-                                    <div className="flex items-center justify-end">
-                                        <Button className="btn-dark">
-                                            <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
-                                            {item.button}
-                                        </Button>
+                            <ScrollBar orientation="horizontal" className="bg-transparent" />
+                        </ScrollArea>
+
+                        {/* ALL TAB CONTENT */}
+                        <TabsContent value={tabs[0]}>
+                            <div className="flex flex-row w-full justify-start items-center mt-8">
+                                <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.FirstTitle")}</h1>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                {filteredItems.map((item, i) => (
+                                    <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                        {/* CARDS IMAGE */}
+                                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                        {/* CARDS TITLE */}
+                                        <h1 className="text-xl font-bold">{item.title}</h1>
+                                        {/* CARDS PARAGRAPH */}
+                                        <p className="text-textLight">{item.description}</p>
+                                        {/* CARDS BUTTON */}
+                                        <div className="flex items-center justify-end">
+                                            <Button className="btn-dark">
+                                                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                {item.button}
+                                            </Button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <Button className="btn-full w-full mt-6">
+                                {t("SeeMore")}
+                            </Button>
+
+                            <div className="flex flex-row w-full justify-start items-center mt-16">
+                                <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.SecondTitle")}</h1>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                {filteredItems.map((item, i) => (
+                                    <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                        {/* CARDS IMAGE */}
+                                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                        {/* CARDS TITLE */}
+                                        <h1 className="text-xl font-bold">{item.title}</h1>
+                                        {/* CARDS PARAGRAPH */}
+                                        <p className="text-textLight">{item.description}</p>
+                                        {/* CARDS BUTTON */}
+                                        <div className="flex items-center justify-end">
+                                            <Button className="btn-dark">
+                                                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                {item.button}
+                                            </Button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            <Button className="btn-full w-full mt-6">
+                                {t("SeeMore")}
+                            </Button>
+
+                            <div className="flex flex-row w-full justify-start items-center mt-16">
+                                <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.ThirdTitle")}</h1>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                {filteredItems.map((item, i) => (
+                                    <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                        {/* CARDS IMAGE */}
+                                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                        {/* CARDS TITLE */}
+                                        <h1 className="text-xl font-bold">{item.title}</h1>
+                                        {/* CARDS PARAGRAPH */}
+                                        <p className="text-textLight">{item.description}</p>
+                                        {/* CARDS BUTTON */}
+                                        <div className="flex items-center justify-end">
+                                            <Button className="btn-dark">
+                                                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                {item.button}
+                                            </Button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            <Button className="btn-full w-full mt-6">
+                                {t("SeeMore")}
+                            </Button>
+
+                            <div className="flex flex-row w-full justify-start items-center mt-16">
+                                <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.FourthTitle")}</h1>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                {filteredItems.map((item, i) => (
+                                    <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                        {/* CARDS IMAGE */}
+                                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                        {/* CARDS TITLE */}
+                                        <h1 className="text-xl font-bold">{item.title}</h1>
+                                        {/* CARDS PARAGRAPH */}
+                                        <p className="text-textLight">{item.description}</p>
+                                        {/* CARDS BUTTON */}
+                                        <div className="flex items-center justify-end">
+                                            <Button className="btn-dark">
+                                                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                {item.button}
+                                            </Button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            <Button className="btn-full w-full mt-6">
+                                {t("SeeMore")}
+                            </Button>
+                        </TabsContent>
+
+                        <TabsContent value={tabs[1]}>
+                            {categories.map((category, i) => (
+                                <div key={i}>
+                                    <h1 className="font-bold text-2xl md:text-3xl">{category[0].toUpperCase() + category.substr(1).toLowerCase()}</h1>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                        {filteredItems.filter((item) => item.category === category).map((item, i) => (
+                                            <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                                {/* CARDS IMAGE */}
+                                                <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                                {/* CARDS TITLE */}
+                                                <h1 className="text-xl font-bold">{item.title}</h1>
+                                                {/* CARDS PARAGRAPH */}
+                                                <p className="text-textLight">{item.description}</p>
+                                                {/* CARDS BUTTON */}
+                                                <div className="flex items-center justify-end">
+                                                    <Button className="btn-dark">
+                                                        <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                        {item.button}
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             ))}
-                        </div>
-
-                        <Button className="btn-full w-full mt-6">
-                            {t("SeeMore")}
-                        </Button>
-
-                        <div className="flex flex-row w-full justify-start items-center mt-16">
-                            <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.SecondTitle")}</h1>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
-                            {filteredItems.map((item, i) => (
-                                <div className="card flex flex-row gap-4 justify-center" key={item.id}>
-                                    {/* CARDS IMAGE */}
-                                    <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
-                                    {/* CARDS TITLE */}
-                                    <h1 className="text-xl font-bold">{item.title}</h1>
-                                    {/* CARDS PARAGRAPH */}
-                                    <p className="text-textLight">{item.description}</p>
-                                    {/* CARDS BUTTON */}
-                                    <div className="flex items-center justify-end">
-                                        <Button className="btn-dark">
-                                            <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
-                                            {item.button}
-                                        </Button>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <Button className="btn-full w-full mt-6">
-                            {t("SeeMore")}
-                        </Button>
-
-                        <div className="flex flex-row w-full justify-start items-center mt-16">
-                            <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.ThirdTitle")}</h1>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
-                            {filteredItems.map((item, i) => (
-                                <div className="card flex flex-row gap-4 justify-center" key={item.id}>
-                                    {/* CARDS IMAGE */}
-                                    <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
-                                    {/* CARDS TITLE */}
-                                    <h1 className="text-xl font-bold">{item.title}</h1>
-                                    {/* CARDS PARAGRAPH */}
-                                    <p className="text-textLight">{item.description}</p>
-                                    {/* CARDS BUTTON */}
-                                    <div className="flex items-center justify-end">
-                                        <Button className="btn-dark">
-                                            <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
-                                            {item.button}
-                                        </Button>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <Button className="btn-full w-full mt-6">
-                            {t("SeeMore")}
-                        </Button>
-
-                        <div className="flex flex-row w-full justify-start items-center mt-16">
-                            <h1 className="font-bold text-2xl md:text-3xl">{t("Titles.FourthTitle")}</h1>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
-                            {filteredItems.map((item, i) => (
-                                <div className="card flex flex-row gap-4 justify-center" key={item.id}>
-                                    {/* CARDS IMAGE */}
-                                    <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
-                                    {/* CARDS TITLE */}
-                                    <h1 className="text-xl font-bold">{item.title}</h1>
-                                    {/* CARDS PARAGRAPH */}
-                                    <p className="text-textLight">{item.description}</p>
-                                    {/* CARDS BUTTON */}
-                                    <div className="flex items-center justify-end">
-                                        <Button className="btn-dark">
-                                            <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
-                                            {item.button}
-                                        </Button>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <Button className="btn-full w-full mt-6">
-                            {t("SeeMore")}
-                        </Button>
+                        </TabsContent>
                     </Tabs>
-
                 ) : (
                     <>
                         {/* FOUND ITEMS */}
