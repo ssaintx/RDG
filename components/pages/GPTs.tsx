@@ -75,7 +75,7 @@ export const GPTs = () => {
                     <div className="relative w-full sm:w-auto">
                         <input
                             type="text"
-                            placeholder="Search"
+                            placeholder={t("Search")}
                             onChange={handleSearchChange}
                             className="bg-backgroundSecondary text-white w-full sm:w-64 px-4 py-2 rounded-full pl-10 focus:outline-none"
                         />
@@ -393,24 +393,29 @@ export const GPTs = () => {
                     <>
                         {/* FOUND ITEMS */}
                         {filteredItems.length > 0 ? (
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
-                                {filteredItems.map((item, i) => (
-                                    <div className="card flex flex-row gap-4 justify-center" key={item.id}>
-                                        {/* CARDS IMAGE */}
-                                        <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
-                                        {/* CARDS TITLE */}
-                                        <h1 className="text-xl font-bold">{item.title}</h1>
-                                        {/* CARDS PARAGRAPH */}
-                                        <p className="text-textLight">{item.description}</p>
-                                        {/* CARDS BUTTON */}
-                                        <div className="flex items-center justify-end">
-                                            <Button className="btn-dark">
-                                                <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
-                                                {item.button}
-                                            </Button>
+                            <div className="flex flex-col">
+                                <div className="flex flex-col items-start w-full mt-8">
+                                    <h1 className="font-bold text-2xl md:text-3xl">{t("Found")}</h1>
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full">
+                                    {filteredItems.map((item, i) => (
+                                        <div className="card flex flex-row gap-4 justify-center" key={item.id}>
+                                            {/* CARDS IMAGE */}
+                                            <Image src={item.image} alt={item.title} width={416} height={206} className="w-full rounded-2xl" />
+                                            {/* CARDS TITLE */}
+                                            <h1 className="text-xl font-bold">{item.title}</h1>
+                                            {/* CARDS PARAGRAPH */}
+                                            <p className="text-textLight">{item.description}</p>
+                                            {/* CARDS BUTTON */}
+                                            <div className="flex items-center justify-end">
+                                                <Button className="btn-dark">
+                                                    <Image src="/icons/telegram.svg" alt="connect-icon" width={18} height={18} />
+                                                    {item.button}
+                                                </Button>
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
                         ) : (
                             <div className="flex flex-col items-start w-full mt-8">

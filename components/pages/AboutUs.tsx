@@ -1,13 +1,28 @@
+"use client"
+
 import Image from "next/image";
 
 import { Team } from "../sections/Team";
 import { GetStarted } from "../sections/GetStarted";
-import { useTranslations } from "next-intl";
-import { aboutUsItems, aboutUsMessages } from "@/constants";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
+
+import { useState } from "react";
+import { Locale } from "@/app/i18n/config";
+import { aboutUsItems } from "@/constants";
+import { useRouter } from 'next/navigation';
+import {
+    useLocale,
+    useTranslations
+} from "next-intl";
+
 
 export const AboutUs = () => {
     const t = useTranslations("AboutUs");
+    const router = useRouter();
+    // get locale to make text bigger in english and smaller in russian
+    const locale = useLocale();
+    const [currentLocale] = useState<Locale>(locale as Locale);
+
     return (
         <section className="about-us">
 
@@ -16,7 +31,12 @@ export const AboutUs = () => {
 
             {/* HERO TEXT CONTAINER */}
             <div className="flex flex-col items-start justify-center container-padding container-padding-2 my-20 gap-4 w-full">
-                <h1 className="text-white font-bold text-3xl sm:text-5xl lg:text-7xl"><span className="text-[#AEB3D3] pr-1">#</span>{t("Title")}</h1>
+                <h1
+                    className={`text-white font-bold ${(currentLocale === 'ru') ? 'text-4xl' : 'text-5xl'} sm:text-5xl lg:text-7xl`}
+                >
+                    <span className="text-[#AEB3D3] pr-1">#</span>
+                    {t("Title")}
+                </h1>
                 <p className="text-white font-bold text-xl md:text-2xl lg:text-3xl">{t("Subtitle")}</p>
             </div>
 

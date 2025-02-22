@@ -249,17 +249,17 @@
             "FirstCard": {
                 "Title": "Telegram Bots Development",
                 "Description": "We make Telegram bots for your business and adapt them to your needs! Integrations, artificial intelligence and modern solutions for automation and increased efficiency.",
-                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"
+                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists"
             },
             "SecondCard": {
                 "Title": "AI Integration",
                 "Description": "We introduce artificial intelligence into your projects! Integrations, automation and modern solutions to increase efficiency and optimize your business processes.",
-                "Features": "• In a few clicks<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"    
+                "Features": "• In a few clicks<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists"    
             },
             "ThirdCard": {
                 "Title": "AI Integration",
                 "Description": "We introduce artificial intelligence into your projects! Integrations, automation and modern solutions to increase efficiency and optimize your business processes.",
-                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists>"    
+                "Features": "• Fast development<br/>• Ongoing support<br/>• Bug fixes and improvements<br/>• The best specialists"    
             }
         },
         "Messages": {
@@ -325,7 +325,9 @@
             "ThirdTitle": "Images",
             "FourthTitle": "Compilation by text"
         },
+        "Search": "Search",
         "SeeMore": "See more",
-        "NotFound": "Not Found"
+        "NotFound": "Not Found",
+        "Found": "Found"
     }
 }

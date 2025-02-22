@@ -25,7 +25,7 @@ export const InfoPanel = () => {
                         <p className="mt-6 text-textLight" dangerouslySetInnerHTML={{ __html: item.description }} />
                         {/* CARDS LINK */}
                         {item.url !== '' ? (<div className="mt-8 flex items-end h-full">
-                            <a href={item.link} className="flex flex-row gap-2 my-6 text-textLight hover">
+                            <a href={item.link} className="flex flex-row gap-2 my-6 text-textLight hover text-[15px] font-semibold">
                                 {item.url}
                                 {item.url !== '' ? <ArrowDownIcon className="size-6" /> : null}
                             </a>

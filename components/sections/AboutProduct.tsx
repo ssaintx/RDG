@@ -26,7 +26,7 @@ export const AboutProduct = () => {
             <p className="mt-6 text-textLight">{item.description}</p>
             {/* CARDS LINK */}
             <div className="flex flex-col h-full justify-end">
-              <a href={item.link} className="flex flex-row gap-2 mt-20 text-textLight hover">
+              <a href={item.link} className="flex flex-row gap-2 mt-20 text-textLight hover text-[15px] font-semibold">
                 {item.url}
                 {item.url !== '' ? <ArrowRightIcon className="-rotate-45 size-6" /> : null}
               </a>
@@ -53,7 +53,7 @@ export const AboutProduct = () => {
               <p className="mt-6 text-textLight">{item.description}</p>
               {/* CARDS LINK */}
               <div className="flex flex-col h-full justify-end">
-                <a href={item.link} className="flex flex-row gap-2 mt-20 text-textLight hover">
+                <a href={item.link} className="flex flex-row gap-2 mt-20 text-textLight hover text-[15px] font-semibold">
                   {item.url}
                   {item.url !== '' ? <ArrowRightIcon className="-rotate-45 size-6" /> : null}
                 </a>
@@ -77,7 +77,7 @@ export const AboutProduct = () => {
               <p className="mt-6 text-textLight">{item.description}</p>
               {/* CARDS LINK */}
               <div className="flex flex-col h-full justify-end">
-                <a href={item.link} className="flex flex-row gap-2 my-6 text-textLight hover">
+                <a href={item.link} className="flex flex-row gap-2 my-6 text-textLight hover text-[15px] font-semibold">
                   {item.url}
                   {item.url !== '' ? <ArrowRightIcon className="-rotate-45 size-6" /> : null}
                 </a>
