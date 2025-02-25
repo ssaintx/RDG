@@ -15,7 +15,7 @@ export const GetStarted = () => {
                 {/* CARD */}
                 <div className="flex flex-col gap-8 items-center card w-full !rounded-[36px]">
                     <h1 className="text-3xl font-bold mt-8">{t("Title")}</h1>
-                    <h2 className="text-center text-textSecondary text-lg w-[500px]">{t("Subtitle")}</h2>
+                    <h2 className="text-center text-textSecondary text-lg font-[300] w-[500px]">{t("Subtitle")}</h2>
                     {/* BUTTONS CONTAINER */}
                     <div className="flex flex-row gap-12 mt-4">
                         <a href="https://t.me/ChatGPT_PuzzleBot">

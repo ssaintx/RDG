@@ -48,7 +48,7 @@ export const productsItems = () => {
         },
         {
             title: t("UsingAI"),
-            href: "/#connect-gpt",
+            href: "/#info-panel",
         },
         {
             title: t("BotDevelopment"),
